@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = zshiftonline@gmail.com
+	name = zshiftonline
+[credential]
+	helper = cache

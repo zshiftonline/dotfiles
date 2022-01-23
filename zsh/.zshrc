@@ -31,6 +31,9 @@ alias update='sudo apt update && sudo apt upgrade'
 alias sc='apt search'
 alias ac='sudo apt install'
 
+alias pd='pushd'
+alias pp='popd'
+
 # use nix
 if [ -e /home/dusty47z/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dusty47z/.nix-profile/etc/profile.d/nix.sh; fi
 

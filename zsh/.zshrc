@@ -25,6 +25,7 @@ alias ....='cd ../../..'
 alias gits='git status'
 alias gita='git add'
 alias gitc='git clone'
+alias gitp='git push -u origin main'
 
 alias update='sudo apt update && sudo apt upgrade'
 alias sc='apt search'

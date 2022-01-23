@@ -16,7 +16,15 @@ source ~/.zsh_plugins.sh
 # aliases
 alias ls='ls -lat --color=auto --group-directories-first'
 alias vim='nvim'
+alias cat='bat'
 alias c='clear'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias gits='git status'
+alias gita='git add'
+alias gitc='git clone'
 
 alias update='sudo apt update && sudo apt upgrade'
 alias sc='apt search'

@@ -21,10 +21,17 @@ nix-env -iA \
 	nixpkgs.direnv \
 
 # stow
+stow autostart
+stow bash
 stow git
-stow zsh
-stow nvim
+stow gtk
+stow htop
 stow i3
+stow kitty
+stow konsole
+stow neofetch
+stow nvim
+stow zsh
 
 # add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells

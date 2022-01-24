@@ -10,10 +10,15 @@ fi
 export NVM_DIR=${HOME}/.nvm
 export NVM_COMPLETION=true
 
+# window manager exports
+export XDG_CONFIG_HOME=~/.config
+export PATH=~/.local/bin:$PATH
+
 # source plugins
 source ~/.zsh_plugins.sh
 
 # aliases
+alias rl='source ~/.zshrc'
 alias ls='ls -lat --color=auto --group-directories-first'
 alias vim='nvim'
 alias cat='bat'
@@ -28,11 +33,16 @@ alias gitc='git clone'
 alias gitp='git push -u origin main'
 
 alias update='sudo apt update && sudo apt upgrade'
-alias sc='apt search'
+alias sc='apt search --names-only'
 alias ac='sudo apt install'
 
 alias pd='pushd'
 alias pp='popd'
+
+# key bindings fix
+bindkey "^[[H"  beginning-of-line
+bindkey "^[[F"  end-of-line
+bindkey "^[[3~" delete-char
 
 # use nix
 if [ -e /home/dusty47z/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dusty47z/.nix-profile/etc/profile.d/nix.sh; fi

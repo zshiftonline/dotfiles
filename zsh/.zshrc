@@ -15,13 +15,13 @@ export XDG_CONFIG_HOME=~/.config
 export PATH=~/.local/bin:$PATH
 
 # source plugins
-source ~/.zsh_plugins.sh
+# source ~/.zsh_plugins.sh
 
 # aliases
 alias rl='source ~/.zshrc'
 alias ls='ls -lat --color=auto --group-directories-first'
 alias vim='nvim'
-alias cat='bat'
+alias cat='batcat'
 alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -55,3 +55,4 @@ zstyle :compinstall filename '/home/dusty47z/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+source ~/powerlevel10k/powerlevel10k.zsh-theme

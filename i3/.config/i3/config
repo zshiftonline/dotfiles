@@ -194,28 +194,28 @@ set $right-monitor	"DP-5"
 # finds out, if available)
 
 # MIDDLE MONITOR BAR
-bar {
-	output $center-monitor
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	tray_output $center-monitor
-	tray_padding 2
-	position top
-}
+# bar {
+# 	output $center-monitor
+#	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#	tray_output $center-monitor
+#	tray_padding 2
+#	position top
+# }
 
 # RIGHT MONITOR BAR
-bar {
-	output $right-monitor
-	status_command i3blocks -c ~/.config/i3/i3blocks-right.conf
-	tray_output none
-	position top
-}
+# bar {
+#	output $right-monitor
+#	status_command i3blocks -c ~/.config/i3/i3blocks-right.conf
+#	tray_output none
+#	position top
+# }
 
 # LEFT MONITOR BAR
-bar {
-	output $left-monitor
-	tray_output none
-	status_command i3blocks -c ~/.config/i3/i3blocks-left.conf
-}
+# bar {
+#	output $left-monitor
+#	tray_output none
+#	status_command i3blocks -c ~/.config/i3/i3blocks-left.conf
+# }
 
 
 # HIDE BORDERS
@@ -230,27 +230,27 @@ workspace $ws5 output $right-monitor
 workspace $ws6 output $center-monitor
 
 # LEFT MONITOR WORKSPACE PROGRAMS
-assign [class="discord"]	$ws1
-assign [class="Thunar"]		$ws1
+assign [class="discord"]	    $ws1
+assign [class="Thunar"]		    $ws1
 
 # CENTER MONITOR WORKSPACE PROGRAMS
-assign [class="Chromium"]	$ws2
-assign [class="vlc"]		$ws6
+assign [class="Chromium"]	    $ws2
+assign [class="vlc"]		    $ws6
 
 # RIGHT MONITOR WORKSPACE PROGRAMS
 assign [class="Pulseeffects"]	$ws5
-assign [class="kitty"]		$ws3
+assign [class="kitty"]		    $ws3
+assign [class="konsole"]        $ws3
 
 # STARTUP PROGRAMS
-exec pulseeffects
-exec snap run discord
+exec discord-canary
 exec chromium
-exec thunar
-exec kitty
+exec konsole
 
 # STARTUP ACTIONS
 exec ~/.config/i3/scripts/bluetooth.sh
 
 # DISPLAY WALLPAPER
-exec_always feh --bg-fill ~/Pictures/debian.png
+exec_always feh --bg-fill ~/pictures/debian.jpg
 exec_always picom
+exec --no-startup-id ~/.config/polybar/launch.sh

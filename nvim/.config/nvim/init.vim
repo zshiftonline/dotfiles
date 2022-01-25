@@ -10,7 +10,7 @@ set smartindent
 set number
 set numberwidth=4
 set relativenumber
-set signcolumn=number
+" set signcolumn=number
 set noswapfile
 set nobackup
 set undodir=~/.config/nvim/undodir
@@ -32,11 +32,11 @@ set mouse=a
 
 " --- Plugins
 
-call plug#begin('~/.config/nvim/plugged')
-
-Plug 'sainnhe/gruvbox-material'
-
-call plug#end()
+" call plug#begin('~/.config/nvim/plugged')
+"
+" Plug 'sainnhe/gruvbox-material'
+"
+" call plug#end()
 
 
 
@@ -44,5 +44,6 @@ call plug#end()
 "
 set background=dark
 set termguicolors
-colorscheme gruvbox-material
+
+" colorscheme gruvbox-material
 

@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
 # Terminate already running bar instances
-killall -q polybar
+killall -q polybar left
+killall -q polybar center
+killall -q polybar right
+
 # If all your bars have ipc enabled, you can also use 
 # polybar-msg cmd quit
-while pgrep -x polybar >/dev/null; do sleep 1; done
+while pgrep -x polybar >/dev/null; do sleep 0.1; done
 
 # Launch left, center, right bars
 echo "---" | tee -a /tmp/polybarLeft.log /tmp/polybarCenter.log /tmp/polybarRight.log

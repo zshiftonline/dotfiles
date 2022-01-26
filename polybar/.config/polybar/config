@@ -4,93 +4,20 @@ include-directory = $HOME/.config/polybar/bars/
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
+background = #11111111
+background-alt = #88222222
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
+foreground = #b3e774
 foreground-alt = #555
-primary = #ffb52a
+primary = #B58DB6
+primary-alt = #88830A48
 secondary = #e60053
 alert = #bd2c40
 
 [fonts]
-main = Ubuntu:pixelsize=14;1
+main = Ubuntu:pixelsize=14;2
 second = Noto Mono:fontformat=truetype:size=16:antialias=false;0
-emoji = Noto Color Emoji:pixelsize=14;1
-
-
-[bar/left]
-monitor = ${env:MONITOR:DP-3}
-width = 100%
-height = 40
-;offset-x = 1%
-;offset-y = 1%
-radius = 1.0
-fixed-center = false
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = ${fonts.main}
-font-1 = ${fonts.second}
-font-2 = ${fonts.emoji}
-
-modules-left = i3
-modules-center = 
-modules-right = filesystem pulseaudio memory cpu date powermenu
-
-tray-position = none
-;tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-wm-restack = i3
-
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
-bottom = true
-
-[bar/center]
-inherit = bar/left
-
-monitor = ${env:MONITOR:HDMI-0}
-
-tray-position = right
-tray-padding = 2
-
-bottom = false
-
-[bar/right]
-inherit = bar/left
-
-monitor = ${env:MONITOR:DP-5}
-
-tray-position = none
-
-bottom = false
-
+emoji = Noto Color Emoji:pixelsize=14;2
 
 [settings]
 

@@ -113,7 +113,7 @@ set $ws3 "terminal"
 set $ws4 "misc"
 set $ws5 "equalizer"
 set $ws6 "video"
-set $ws7 "7"
+set $ws7 "game"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -181,7 +181,7 @@ bindsym $mod+shift+x exec i3lock
 # CUSTOM PROGRAM SHORTCUTS
 bindsym Print           exec flameshot gui
 bindsym $mod+b          exec chromium"
-bindsym $mod+f          exec thunar
+bindsym $mod+f          exec pcmanfm
 bindsym $mod+Shift+b    exec /home/dusty47z/scripts-notes-etc/scripts/bash/sony-bt-connect.sh
 
 # CUSTOM VARIABLES
@@ -228,14 +228,19 @@ workspace $ws3 output $right-monitor
 workspace $ws4 output $left-monitor
 workspace $ws5 output $right-monitor
 workspace $ws6 output $center-monitor
+workspace $ws7 output $center-monitor
 
 # LEFT MONITOR WORKSPACE PROGRAMS
 assign [class="discord"]	    $ws1
 assign [class="Thunar"]		    $ws1
+assign [class="Pcmanfm"]        $ws1
 
 # CENTER MONITOR WORKSPACE PROGRAMS
-assign [class="Chromium"]	    $ws2
-assign [class="vlc"]		    $ws6
+assign [class="Chromium"]	            $ws2
+assign [class="vlc"]		            $ws6
+assign [class="minecraft-launcher"]     $ws7
+assign [class="Minecraft Launcher"]     $ws7
+assign [class="Minecraft 1.18.1"]       $ws7
 
 # RIGHT MONITOR WORKSPACE PROGRAMS
 assign [class="Pulseeffects"]	$ws5
@@ -246,6 +251,7 @@ assign [class="konsole"]        $ws3
 exec discord-canary
 exec chromium
 exec konsole
+exec pcmanfm
 
 # STARTUP ACTIONS
 exec ~/.config/i3/scripts/bluetooth.sh

@@ -250,4 +250,24 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/dusty47z/pictures/2022-01-25_20-37.png" added="2022-01-26T01:37:46.513987Z" modified="2022-01-26T01:37:46.513994Z" visited="2022-01-26T01:37:46.513988Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="discord-canary" exec="&apos;discord-canary %u&apos;" modified="2022-01-26T01:37:46.513990Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dusty47z/2022-01-25_20-38.png" added="2022-01-26T01:40:06.448461Z" modified="2022-01-26T01:40:06.448468Z" visited="2022-01-26T01:40:06.448462Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="discord-canary" exec="&apos;discord-canary %u&apos;" modified="2022-01-26T01:40:06.448464Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

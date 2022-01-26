@@ -180,7 +180,8 @@ bindsym $mod+shift+x exec i3lock
 
 # CUSTOM PROGRAM SHORTCUTS
 bindsym Print           exec flameshot gui
-bindsym $mod+b          exec chromium"
+bindsym $mod+b          exec chromium
+bindsym $mod+Shift+d    exec discord-canary
 bindsym $mod+f          exec pcmanfm
 bindsym $mod+Shift+b    exec /home/dusty47z/scripts-notes-etc/scripts/bash/sony-bt-connect.sh
 
@@ -216,6 +217,12 @@ set $right-monitor	"DP-5"
 #	tray_output none
 #	status_command i3blocks -c ~/.config/i3/i3blocks-left.conf
 # }
+
+
+# i3 configuration settings
+focus_follows_mouse             no
+mouse_warping                   none
+workspace_auto_back_and_forth   yes
 
 
 # HIDE BORDERS

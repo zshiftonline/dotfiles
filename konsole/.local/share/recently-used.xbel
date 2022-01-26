@@ -270,4 +270,57 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/dusty47z/something.svg" added="2022-01-26T10:26:37.723393Z" modified="2022-01-26T10:26:37.723397Z" visited="2022-01-26T10:26:37.723393Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/xml"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-26T10:26:37.723395Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dusty47z/unknown.png" added="2022-01-26T19:04:35.156195Z" modified="2022-01-26T19:04:35.156198Z" visited="2022-01-26T19:04:35.156195Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="DiscordCanary" exec="&apos;DiscordCanary %u&apos;" modified="2022-01-26T19:04:35.156197Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dusty47z/2022-01-26_16-06.png" added="2022-01-26T21:14:37.145249Z" modified="2022-01-26T21:14:37.145256Z" visited="2022-01-26T21:14:37.145250Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="discord-canary" exec="&apos;discord-canary %u&apos;" modified="2022-01-26T21:14:37.145252Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dusty47z/2022-01-26_16-09.png" added="2022-01-26T21:14:50.266499Z" modified="2022-01-26T21:14:50.266507Z" visited="2022-01-26T21:14:50.266500Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="discord-canary" exec="&apos;discord-canary %u&apos;" modified="2022-01-26T21:14:50.266502Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dusty47z/2022-01-26_06-25.png" added="2022-01-26T21:15:17.027460Z" modified="2022-01-26T21:15:17.027467Z" visited="2022-01-26T21:15:17.027461Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="discord-canary" exec="&apos;discord-canary %u&apos;" modified="2022-01-26T21:15:17.027463Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

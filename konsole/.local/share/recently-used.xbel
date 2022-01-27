@@ -42,15 +42,15 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dusty47z/.config/polybar/modules/modules.ini" added="2022-01-25T22:46:58.341291Z" modified="2022-01-26T00:05:51.993126Z" visited="2022-01-25T22:46:58.341292Z">
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/modules.ini" added="2022-01-25T22:46:58.341291Z" modified="2022-01-27T07:46:15.163183Z" visited="2022-01-25T22:46:58.341292Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>geany</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-26T00:05:51.993125Z" count="3"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:46:15.163180Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -68,28 +68,28 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dusty47z/.config/polybar/modules/i3.ini" added="2022-01-25T23:13:42.557539Z" modified="2022-01-25T23:13:42.570889Z" visited="2022-01-25T23:13:42.557540Z">
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/i3.ini" added="2022-01-25T23:13:42.557539Z" modified="2022-01-27T07:46:32.993766Z" visited="2022-01-25T23:13:42.557540Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>geany</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-25T23:13:42.570887Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:46:32.993762Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dusty47z/.config/polybar/modules/cpu.ini" added="2022-01-25T23:41:31.341832Z" modified="2022-01-25T23:41:31.354602Z" visited="2022-01-25T23:41:31.341833Z">
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/cpu.ini" added="2022-01-25T23:41:31.341832Z" modified="2022-01-27T07:46:24.089924Z" visited="2022-01-25T23:41:31.341833Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>geany</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-25T23:41:31.354600Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:46:24.089921Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -107,54 +107,54 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dusty47z/.config/polybar/modules/date.ini" added="2022-01-26T00:05:51.734357Z" modified="2022-01-26T00:05:51.993101Z" visited="2022-01-26T00:05:51.734358Z">
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/date.ini" added="2022-01-26T00:05:51.734357Z" modified="2022-01-27T07:46:22.443713Z" visited="2022-01-26T00:05:51.734358Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>geany</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-26T00:05:51.993099Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:46:22.443709Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dusty47z/.config/polybar/modules/filesystem.ini" added="2022-01-26T00:05:51.815547Z" modified="2022-01-26T00:05:51.993109Z" visited="2022-01-26T00:05:51.815548Z">
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/filesystem.ini" added="2022-01-26T00:05:51.815547Z" modified="2022-01-27T07:46:19.657927Z" visited="2022-01-26T00:05:51.815548Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>geany</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-26T00:05:51.993108Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:46:19.657923Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dusty47z/.config/polybar/modules/memory.ini" added="2022-01-26T00:05:51.896634Z" modified="2022-01-26T00:05:51.993120Z" visited="2022-01-26T00:05:51.896635Z">
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/memory.ini" added="2022-01-26T00:05:51.896634Z" modified="2022-01-27T07:46:17.993748Z" visited="2022-01-26T00:05:51.896635Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>geany</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-26T00:05:51.993119Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:46:17.993745Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dusty47z/.config/polybar/modules/xwindow.ini" added="2022-01-26T00:05:51.979234Z" modified="2022-01-26T00:05:51.993114Z" visited="2022-01-26T00:05:51.979235Z">
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/xwindow.ini" added="2022-01-26T00:05:51.979234Z" modified="2022-01-27T07:49:25.964071Z" visited="2022-01-26T00:05:51.979235Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>geany</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-26T00:05:51.993114Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:49:25.964069Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -319,6 +319,19 @@
         <mime:mime-type type="image/png"/>
         <bookmark:applications>
           <bookmark:application name="discord-canary" exec="&apos;discord-canary %u&apos;" modified="2022-01-26T21:15:17.027463Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dusty47z/.config/polybar/modules/powermenu.ini" added="2022-01-27T07:46:29.260913Z" modified="2022-01-27T07:46:29.274547Z" visited="2022-01-27T07:46:29.260914Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2022-01-27T07:46:29.274545Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

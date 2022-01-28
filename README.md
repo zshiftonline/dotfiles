@@ -9,3 +9,6 @@ aka $HOME directory, so stow directory is app/.confg/app for output directory ~/
 mainly used to restore my systems or update them
 
 feel free to use whatever
+
+my current i3 desktop 
+[i3wm on Debian 11 Bullseye](image.png)

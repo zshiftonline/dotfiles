@@ -11,4 +11,4 @@ mainly used to restore my systems or update them
 feel free to use whatever
 
 my current i3 desktop 
-[i3wm on Debian 11 Bullseye](image.png)
+[i3wm on Debian 11 Bullseye](https://imgur.com/W1UWLlX)

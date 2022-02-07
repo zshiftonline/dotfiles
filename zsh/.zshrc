@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# source zsh-autosuggestions
+source /home/dusty47z/dotfiles/zsh/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # export nvm completion settings for lukechilds/zsh-nvm plugin
 # this must be exprted before the plugin is bundled
 export NVM_DIR=${HOME}/.nvm
@@ -56,3 +59,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# source zsh-autosuggestions
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

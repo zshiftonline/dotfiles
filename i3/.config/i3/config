@@ -248,6 +248,7 @@ assign [class="vlc"]		            $ws6
 assign [class="minecraft-launcher"]     $ws7
 assign [class="Minecraft Launcher"]     $ws7
 assign [class="Minecraft 1.18.1"]       $ws7
+assign [class="Minecraft* 1.18.1"]      $ws7
 
 # RIGHT MONITOR WORKSPACE PROGRAMS
 assign [class="Pulseeffects"]	$ws5

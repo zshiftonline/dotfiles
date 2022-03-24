@@ -53,6 +53,8 @@ alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias blkid='sudo blkid'
+alias lsblk='lsblk -o name,size,mountpoint,type -e 7'
 
 alias gits='git status'
 alias gita='git add'
@@ -66,6 +68,8 @@ alias ac='sudo apt install'
 alias pd='pushd'
 alias pp='popd'
 
+alias overclock='flatpak run com.leinardi.gwe'
+
 # key bindings fix
 bindkey "^[[H"  beginning-of-line
 bindkey "^[[F"  end-of-line
@@ -76,3 +80,5 @@ bindkey "^[[3~" delete-char
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/dusty47z/.zshrc'
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
+
+export PATH=~/.local/bin:$PATH

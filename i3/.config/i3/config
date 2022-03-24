@@ -181,7 +181,7 @@ bindsym $mod+shift+x exec i3lock
 # CUSTOM PROGRAM SHORTCUTS
 bindsym Print           exec flameshot gui
 bindsym $mod+b          exec chromium
-bindsym $mod+Shift+d    exec discord-canary
+bindsym $mod+Shift+d    exec "./Programs/DiscordCanary/DiscordCanary"
 bindsym $mod+f          exec pcmanfm
 bindsym $mod+Shift+b    exec /home/dusty47z/scripts-notes-etc/scripts/bash/sony-bt-connect.sh
 
@@ -256,7 +256,7 @@ assign [class="kitty"]		    $ws3
 assign [class="konsole"]        $ws3
 
 # STARTUP PROGRAMS
-exec discord-canary
+exec "./Programs/DiscordCanary/DiscordCanary"
 exec chromium
 exec konsole
 exec pcmanfm

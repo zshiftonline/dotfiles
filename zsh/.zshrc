@@ -64,9 +64,12 @@ alias gitp='git push -u origin main'
 alias update='sudo apt update && sudo apt upgrade'
 alias sc='apt search --names-only'
 alias ac='sudo apt install'
+alias inf='apt info'
 
 alias pd='pushd'
 alias pp='popd'
+
+alias ln='linode-cli'
 
 alias overclock='flatpak run com.leinardi.gwe'
 

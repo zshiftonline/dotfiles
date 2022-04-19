@@ -84,4 +84,5 @@ bindkey "^[[3~" delete-char
 zstyle :compinstall filename '/home/dusty47z/.zshrc'
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
-export PATH=~/.local/bin:$PATH
+export PATH=~/.local/bin:/snap/bin:$PATH
+export TERM=xterm-256color

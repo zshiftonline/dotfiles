@@ -41,14 +41,14 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $modq kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal konsole -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+d exec --no-startup-id "rofi -modi window,drun,run,combi,keys -show combi -sidebar-mode -terminal kitty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -253,12 +253,11 @@ assign [class="Minecraft* 1.18.1"]      $ws7
 # RIGHT MONITOR WORKSPACE PROGRAMS
 assign [class="Pulseeffects"]	$ws5
 assign [class="kitty"]		    $ws3
-assign [class="konsole"]        $ws3
 
 # STARTUP PROGRAMS
 exec "./Programs/DiscordCanary/DiscordCanary"
 exec chromium
-exec konsole
+exec kitty
 exec pcmanfm
 
 # STARTUP ACTIONS

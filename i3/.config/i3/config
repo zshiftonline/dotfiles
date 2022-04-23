@@ -48,7 +48,7 @@ bindsym $modq kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec --no-startup-id "rofi -modi window,drun,run,combi,keys -show combi -sidebar-mode -terminal kitty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+d exec --no-startup-id "rofi -modi window,drun,run,combi,keys -show run -sidebar-mode -terminal kitty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -181,7 +181,7 @@ bindsym $mod+shift+x exec i3lock
 # CUSTOM PROGRAM SHORTCUTS
 bindsym Print           exec flameshot gui
 bindsym $mod+b          exec chromium
-bindsym $mod+Shift+d    exec "./Programs/DiscordCanary/DiscordCanary"
+bindsym $mod+Shift+d    exec discord-canary
 bindsym $mod+f          exec pcmanfm
 bindsym $mod+Shift+b    exec /home/dusty47z/scripts-notes-etc/scripts/bash/sony-bt-connect.sh
 
@@ -255,7 +255,7 @@ assign [class="Pulseeffects"]	$ws5
 assign [class="kitty"]		    $ws3
 
 # STARTUP PROGRAMS
-exec "./Programs/DiscordCanary/DiscordCanary"
+exec discord-canary
 exec chromium
 exec kitty
 exec pcmanfm

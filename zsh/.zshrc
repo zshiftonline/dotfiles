@@ -20,7 +20,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -28,11 +28,21 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
-            git
             zsh-autosuggestions
+            zsh-completions
+            git
             sudo
             web-search
             copyfile
+            ansible
+            colored-man-pages
+            debian
+            ufw
+            ssh-agent
+            tmux
+            systemd
+            timer
+            torrent
         )
 
 source $ZSH/oh-my-zsh.sh
@@ -69,7 +79,7 @@ alias inf='apt info'
 alias pd='pushd'
 alias pp='popd'
 
-alias ln='linode-cli'
+alias lnc='linode-cli'
 
 alias overclock='flatpak run com.leinardi.gwe'
 

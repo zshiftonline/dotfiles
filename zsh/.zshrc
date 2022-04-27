@@ -51,44 +51,27 @@ COMPLETION_WAITING_DOTS="%F{green}loading...%f"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-<<<<<<< HEAD
 ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump"
-
-COMPLETION_WAITING_DOTS="%F{red} loading...%f"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
             zsh-autosuggestions
             zsh-completions
+            autojump
+            jovial
+            alias-finder
+            zsh-syntax-highlighting
+            urltools
             git
             sudo
-            web-search
-            copyfile
             ansible
             colored-man-pages
             debian
-            ufw
-            tmux
             systemd
         )
-=======
-plugins=(
-  git
-  autojump
-  urltools
-  bgnotify
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  jovial
-  ansible
-  systemd
-  alias-finder
-  colored-man-pages
-)
 
-fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
->>>>>>> d03d7a21d8af58e0d34349dec611ec6cdc262885
+    fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,7 +109,6 @@ alias inf='apt info'
 alias pd='pushd'
 alias pp='popd'
 alias lnc='linode-cli'
-<<<<<<< HEAD
 
 alias overclock='flatpak run com.leinardi.gwe'
 
@@ -144,5 +126,3 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=~/.local/bin:/snap/bin:$PATH
 export TERM=xterm-256color
 alias nls='ls --no-group --time-style=iso --color=always --group-directories-first -lA'
-=======
->>>>>>> d03d7a21d8af58e0d34349dec611ec6cdc262885

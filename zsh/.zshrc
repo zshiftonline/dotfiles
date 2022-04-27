@@ -25,6 +25,10 @@ ENABLE_CORRECTION="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump"
+
+COMPLETION_WAITING_DOTS="%F{red} loading...%f"
+
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
@@ -38,11 +42,8 @@ plugins=(
             colored-man-pages
             debian
             ufw
-            ssh-agent
             tmux
             systemd
-            timer
-            torrent
         )
 
 source $ZSH/oh-my-zsh.sh
@@ -96,3 +97,4 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 export PATH=~/.local/bin:/snap/bin:$PATH
 export TERM=xterm-256color
+alias nls='ls --no-group --time-style=iso --color=always --group-directories-first -lA'

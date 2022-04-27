@@ -118,10 +118,10 @@ bindkey "^[[F"  end-of-line
 bindkey "^[[3~" delete-char
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/dusty47z/.zshrc'
-source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
+# zstyle :compinstall filename '/home/dusty47z/.zshrc'
+# source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 export PATH=~/.local/bin:/snap/bin:$PATH
 export TERM=xterm-256color

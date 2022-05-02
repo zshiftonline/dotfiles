@@ -9,6 +9,8 @@
 
 xset +fp /home/dusty47z/.local/share/fonts
 xset fp rehash
+xset dpms 2700 2700 2700
+xset s 2700
 
 ## vscode auth fix ##
 # see https://unix.stackexchange.com/a/295652/332452

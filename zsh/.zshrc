@@ -1,5 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=~/.local/bin:/snap/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/snap/bin:$PATH
 export ZSH="$HOME/.config/ohmyzsh"
 ZSH_THEME="jovial"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )

@@ -24,7 +24,7 @@ set relativenumber
 " set signcolumn=number
 set noswapfile
 set nobackup
-set undodir=~/.config/nvim/undodir
+set undodir=$HOME/.cache/nvim/undodir
 set undofile
 set incsearch
 set nohlsearch

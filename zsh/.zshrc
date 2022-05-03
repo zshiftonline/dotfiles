@@ -57,7 +57,6 @@ ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump"
 plugins=(
             zsh-autosuggestions
             zsh-completions
-            autojump
             jovial
             alias-finder
             zsh-syntax-highlighting

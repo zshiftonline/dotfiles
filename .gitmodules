@@ -55,3 +55,6 @@
 [submodule "nerdtree-git-plugin"]
     path = $VIMPLUG/nerdtree-git-plugin
     url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "ohmyzsh/.config/ohmyzsh"]
+	path = ohmyzsh/.config/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git

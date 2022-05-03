@@ -1,5 +1,5 @@
 [submodule "ohmyzsh"]
-    path = $HOME/.config/ohmyzsh
+    path = ohmyzsh/.config/ohmyzsh
     url = https://github.com/ohmyzsh/ohmyzsh.git
 
 [submodule "gocode"]

@@ -42,17 +42,6 @@ set mouse=a
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:indentLine_char = '⦙'
-"
-
-" --- Plugins
-
-" call plug#begin('~/.config/nvim/plugged')
-"
-" Plug 'sainnhe/gruvbox-material'
-"
-" call plug#end()
-
-
 
 " --- Colors
 "
@@ -60,8 +49,6 @@ set background=dark
 set termguicolors
 
 " colorscheme gruvbox-material
-
-" # set stdpath('config') . '/init.vim'
 
 call plug#begin('~/.config/nvim/plugged')
 " The default plugin directory will be as follows:
@@ -71,8 +58,6 @@ call plug#begin('~/.config/nvim/plugged')
 " You can specify a custom plugin directory by passing it as the argument
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 "   - Avoid using standard Vim directory names like 'plugin'
-
-" Make sure you use single quotes
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
@@ -84,11 +69,14 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+            \ Plug 'ryanoasis/vim-devicons'
 
-" Using a non-default branch
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+Plug 'roxma/nvim-completion-manager'
 
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go', { 'tag': '*' }
@@ -99,17 +87,6 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-" Unmanaged plugin (manually installed and updated)
-Plug '~/my-prototype-plugin'
-
 " Initialize plugin system
 call plug#end()
 
-
-
-
-"# call plug#begin()
-"# Plug 'roxma/nvim-completion-manager'
-"# Plug 'SirVer/ultisnips'
-"# Plug 'honza/vim-snippets'
-"# call plug#end()

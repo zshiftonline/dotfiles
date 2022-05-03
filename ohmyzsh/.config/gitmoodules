@@ -1,0 +1,39 @@
+[submodule "custom/plugins/zsh-completions"]
+    path = custom/plugins/zsh-completions
+    url = https://github.com/zsh-users/zsh-completions.git
+[submodule "custom/plugins/zsh-syntax-highlighting"]
+    path = custom/plugins/zsh-syntax-highlighting
+    url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "custom/plugins/zsh-autosuggestions"]
+    path = custom/plugins/zsh-autosuggestions
+    url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "gocode"]
+    path = $VIMPLUG/gocode
+    url = https://github.com/nsf/gocode.git
+[submodule "vim-go"]
+    path = $VIMPLUG/vim-go
+    url = https://github.com/fatih/vim-go.git
+[submodule "ultisnips"]
+    path = $VIMPLUG/ultisnips
+    url = https://github.com/SirVer/ultisnips.git
+[submodule "vim-snippets"]
+    path = $VIMPLUG/vim-snippets
+    url = https://github.com/honza/vim-snippets.git
+[submodule "vim-github-dashboard"]
+    path = $VIMPLUG/vim-github-dashboard
+    url = https://github.com/junegunn/vim-github-dashboard.git
+[submodule "vim-easy-align"]
+    path = $VIMPLUG/vim-easy-align
+    url = https://github.com/junegunn/vim-easy-align.git
+[submodule "nerdtree"]
+    path = $VIMPLUG/nerdtree
+    url = https://github.com/preservim/nerdtree.git
+[submodule "vim-devicons"]
+    path = $VIMPLUG/vim-devicons
+    url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "vim-nerdtree-syntax-hightlight"]
+    path = $VIMPLUG/vim-nerdtree-syntax-highlight
+    url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule "nerdtree-git-plugin"]
+    path = $VIMPLUG/nerdtree-git-plugin
+    url = https://github.com/Xuyuanp/nerdtree-git-plugin.git

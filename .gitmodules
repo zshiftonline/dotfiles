@@ -7,3 +7,6 @@
 [submodule "ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions"]
 	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k"]
+	path = ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

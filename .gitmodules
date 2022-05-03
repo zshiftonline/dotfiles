@@ -1,9 +1,9 @@
 [submodule "ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions"]
-	path = ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions
+	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting"]
-	path = ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting
+	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions"]
-	path = ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions
+	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git

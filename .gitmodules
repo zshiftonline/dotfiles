@@ -1,0 +1,36 @@
+[submodule "gocode"]
+    path = $VIMPLUG/gocode
+    url = https://github.com/nsf/gocode.git
+
+[submodule "vim-go"]
+    path = $VIMPLUG/vim-go
+    url = https://github.com/fatih/vim-go.git
+
+[submodule "ultisnips"]
+    path = $VIMPLUG/ultisnips
+    url = https://github.com/SirVer/ultisnips.git
+
+[submodule "nerdtree"]
+    path = $VIMPLUG/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+
+[submodule "vim-snippets"]
+    path = $VIMPLUG/vim-snippets
+    url = https://github.com/honza/vim-snippets.git
+
+[submodule "vim-fireplace"]
+    path = $VIMPLUG/vim-fireplace
+    url = https://github.com/tpope/vim-fireplace.git
+
+[submodule "vim-github-dashboard"]
+    path = $VIMPLUG/vim-github-dashboard
+    url = https://github.com/junegunn/vim-github-dashboard.git
+
+[submodule "YCM-Generator"]
+    path = $VIMPLUG/YCM-Generator
+    url = https://github.com/rdnetto/YCM-Generator.git
+
+[submodule "vim-easy-align"]
+    path = $VIMPLUG/vim-easy-align
+    url = https://github.com/junegunn/vim-easy-align.git
+

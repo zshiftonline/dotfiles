@@ -76,8 +76,6 @@ Plug 'preservim/nerdtree' |
 
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-Plug 'roxma/nvim-completion-manager'
-
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go', { 'tag': '*' }
 

@@ -77,14 +77,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
 # aliases
 alias rl='source ~/.zshrc'
 alias ll='ls -phlAt --color=auto --group-directories-first'
@@ -108,20 +101,4 @@ alias inf='apt info'
 alias pd='pushd'
 alias pp='popd'
 alias lnc='linode-cli'
-
-alias overclock='flatpak run com.leinardi.gwe'
-
-# key bindings fix
-bindkey "^[[H"  beginning-of-line
-bindkey "^[[F"  end-of-line
-bindkey "^[[3~" delete-char
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-# The following lines were added by compinstall
-# zstyle :compinstall filename '/home/dusty47z/.zshrc'
-# source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
-
-export PATH=~/.local/bin:/snap/bin:$PATH
-export TERM=xterm-256color
 alias nls='ls --no-group --time-style=iso --color=always --group-directories-first -lA'

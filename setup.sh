@@ -1,0 +1,1 @@
+apt update; apt install zsh git stow curl wget htop neofetch neovim vim; apt full-upgrade; git clone --recurse-submodules https://github.com/zshiftonline/dotfiles; cd dotfiles; stow zsh ohmyzsh nvim vim htop neofetch; source ~/.zshrc

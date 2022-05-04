@@ -57,13 +57,10 @@ ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump"
 plugins=(
             zsh-autosuggestions
             zsh-completions
-            jovial
             alias-finder
             zsh-syntax-highlighting
-            urltools
             git
             sudo
-            ansible
             colored-man-pages
             debian
             systemd

@@ -8,6 +8,7 @@ declare -a \
 for val in ${DIR[@]}; do
     if [ ! -d "$HOME/.config/ohmyzsh" ]; then
         mkdir -p $HOME/.config/ohmyzsh
+        echo "${DIR[@]}"
     fi
 done
 

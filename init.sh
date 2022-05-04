@@ -9,6 +9,7 @@ for val in ${DIR[@]}; do
     if [ ! -d "$HOME/.config/ohmyzsh" ]; then
         mkdir -p $HOME/.config/ohmyzsh
     fi
+done
 
 if [ -f "$file" ]; then
     mv $file $file.bak

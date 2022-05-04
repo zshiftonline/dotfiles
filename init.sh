@@ -5,9 +5,10 @@
 DIR=( "ohmyzsh" "nvim" "htop" "neofetch" )
 
 for val in ${DIR[@]}; do
-    if [ ! -d "$HOME/.config/ohmyzsh" ]; then
-        mkdir -p $HOME/.config/ohmyzsh
-        echo "${DIR[@]}"
+    echo "debug; $val"
+    if [ ! -d "$HOME/.config/$val" ]; then
+        mkdir -p $HOME/.config/$val
+        echo "debug; $val created"
     fi
 done
 

@@ -11,11 +11,11 @@ for val in ${DIR[@]}; do
     fi
 done
 
-if [ -f "$file" ]; then
-    mv $file $file.bak
-fi
+# if [ -f "$file" ]; then
+#    mv $file $file.bak
+# fi
 
-stow zsh ohmyzsh vim nvim htop neofetch
+# stow zsh ohmyzsh vim nvim htop neofetch
 
-source $HOME/.zshrc
+# source $HOME/.zshrc
 

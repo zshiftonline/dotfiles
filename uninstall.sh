@@ -12,3 +12,4 @@ rm -rf gitmoodules htop neofetch nvim ohmyzsh
 # remove dotfiles dir
 cd $HOME
 rm -rf dotfiles/
+cd ~

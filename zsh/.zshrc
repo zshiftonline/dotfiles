@@ -1,6 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/snap/bin:$PATH
 export ZSH="$HOME/.config/ohmyzsh"
-ZSH_THEME="bureau"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 bindkey "^[[H"  beginning-of-line

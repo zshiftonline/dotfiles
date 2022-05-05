@@ -1,22 +1,22 @@
 #!/bin/bash
 # update cache
 echo "DEBUG: apt update start"
-apt update
+apt update &> /dev/null
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"
-apt install zsh git stow curl wget htop neofetch neovim vim
+apt install zsh git stow curl wget htop neofetch neovim vim &> /dev/null
 echo "DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
-apt full-upgrade
+apt full-upgrade &> /dev/null
 echo "DEBUG: apt full-upgrade end"
 # clone config repo
 echo "DEBUG: clone dotfiles repo start"
 cd $HOME
 if [ ! -d $HOME/dotfiles/ ]; then
     echo "DEBUG: dotfiles dir doesnt exist"
-    git clone --recurse-submodules https://github.com/zshiftonline/dotfiles
+    git clone --recurse-submodules https://github.com/zshiftonline/dotfiles &> /dev/null
 else   
     echo "DEBUG: dir exist and change dir"
     # cd into repo

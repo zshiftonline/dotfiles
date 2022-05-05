@@ -32,9 +32,12 @@ echo "DEBUG: remove .zshrc.bck  & replace if exist start"
 if [ ! -f $HOME/.zshrc.bck ]; then
     echo "DEBUG: .zshrc.bck doesnt exist"
     source $HOME/.zshrc
+    source $HOME/.p10k.zsh
 else
     echo "DEBUG: .zshrc.bck exists"
     mv $HOME/.zshrc.bck $HOME/.zshrc && echo "DEBUG: .zshrc replaced"
     source $HOME/.zshrc
+    source $HOME/.p10k.zsh
+else
 fi
 echo "DEBUG: remove .zshrc.bck & replace if exist end"

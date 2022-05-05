@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # unstow config files
-stow -D ohmyzsh zsh nvim vim neofetch htop
+stow -D ohmyzsh zsh nvim vim neofetch htop powerlevel10k
 # change directory to avoid conflict
 cd ..
 # remove remaining linked files
-rm .vimrc .zshrc .zshrc.bck
+rm .vimrc .zshrc .zshrc.bck .p10k.zsh
 # remove remaining linked .config files
 cd $HOME/.config
 rm -rf gitmoodules htop neofetch nvim ohmyzsh

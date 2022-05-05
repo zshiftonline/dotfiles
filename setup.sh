@@ -38,6 +38,5 @@ else
     mv $HOME/.zshrc.bck $HOME/.zshrc && echo "DEBUG: .zshrc replaced"
     source $HOME/.zshrc
     source $HOME/.p10k.zsh
-else
 fi
 echo "DEBUG: remove .zshrc.bck & replace if exist end"

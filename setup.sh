@@ -25,7 +25,7 @@ fi
 echo "DEBUG: clone dotfiles repo end"
 # link config files to system from repo
 echo "DEBUG: stow configs start"
-stow zsh ohmyzsh nvim vim htop neofetch
+stow zsh ohmyzsh nvim vim htop neofetch powerlevel10k
 echo "DEBUG: stow configs end"
 # remove default .zshrc; replace with repo .zshrc
 echo "DEBUG: remove .zshrc.bck  & replace if exist start"

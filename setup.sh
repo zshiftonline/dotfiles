@@ -9,7 +9,7 @@ apt install zsh git stow curl wget htop neofetch neovim vim &> /dev/null
 echo "DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
-apt full-upgrade &> /dev/null
+apt full-upgrade -y &> /dev/null
 echo "DEBUG: apt full-upgrade end"
 # clone config repo
 echo "DEBUG: clone dotfiles repo start"

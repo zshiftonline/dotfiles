@@ -3,7 +3,7 @@
 # unstow config files
 stow -D ohmyzsh zsh nvim vim neofetch htop powerlevel10k
 # change directory to avoid conflict
-cd ..
+cd $HOME
 # remove remaining linked files
 rm .vimrc .zshrc .zshrc.bck .p10k.zsh
 # remove remaining linked .config files

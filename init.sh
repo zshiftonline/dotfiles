@@ -4,11 +4,13 @@
 
 DIR=( "ohmyzsh" "nvim" "htop" "neofetch" )
 
-for i in ${DIR[@]}; do
+for i in "${DIR[@]}"; do
     echo "debug; $i"
-    if [ ! -d "$HOME/.config/$i" ]; then
-       # mkdir -p $HOME/.config/$i
-        echo "debug; $i created"
+    if [ ! -e "$HOME/.config/$i" ]; then
+            mkdir -p $HOME/.config/$i
+            echo "debug; $i created"
+        else
+            echo "debug: $i not created"
     fi
 done
 

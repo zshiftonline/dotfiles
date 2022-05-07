@@ -5,7 +5,7 @@ apt update &> /dev/null
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"
-apt install zsh git stow curl wget htop neofetch neovim vim &> /dev/null
+apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null
 echo "DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"

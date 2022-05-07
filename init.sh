@@ -4,11 +4,11 @@
 
 DIR=( "ohmyzsh" "nvim" "htop" "neofetch" )
 
-for val in ${DIR[@]}; do
-    echo "debug; $val"
-    if [ ! -d "$HOME/.config/$val" ]; then
-        mkdir -p $HOME/.config/$val
-        echo "debug; $val created"
+for i in ${DIR[@]}; do
+    echo "debug; $i"
+    if [ ! -d "$HOME/.config/$i" ]; then
+       # mkdir -p $HOME/.config/$i
+        echo "debug; $i created"
     fi
 done
 

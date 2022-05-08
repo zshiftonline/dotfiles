@@ -2,15 +2,16 @@
 
 ###  Check for config files && Back them up   ###
 
-DIR=( "ohmyzsh" "nvim" "htop" "neofetch" )
+echo "debug: home/$HOME"
 
+DIR=( "ohmyzsh" "nvim" "htop" "neofetch" )
 for i in "${DIR[@]}"; do
     echo "debug; $i"
-    if [ ! -e "$HOME/.config/$i" ]; then
-            mkdir -p $HOME/.config/$i
-            echo "debug; $i created"
-        else
-            echo "debug: $i not created"
+    if [ '!' -d "$HOME/.config/$i" ]; then
+        mkdir -p $HOME/.config/$i
+        echo "debug; $i created"
+    else
+        echo "debug: $i not created"
     fi
 done
 

@@ -57,7 +57,7 @@ COMPLETION_WAITING_DOTS="%F{green}loading...%f"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump"
+ZSH_COMPDUMP="$HOME/.zcompdump"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/

@@ -63,7 +63,6 @@ ZSH_COMPDUMP="$HOME/.zcompdump"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
             zsh-autosuggestions
-            zsh-completions
             alias-finder
             zsh-syntax-highlighting
             git

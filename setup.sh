@@ -3,13 +3,7 @@
 trap 'kill "$bgid"' EXIT
 echo "DEBUG: apt update start"
   apt update &> /dev/null &
-  jobid=$!
-	while :; do 
-    printf "."
-    sleep 0.2
-  done &
-  bgid=$!
-  wait "$jobid";
+  jobid=$!; while :; do printf "."; sleep 0.2; done &; bgid=$!; wait "$jobid" && kill "$bgid"
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"

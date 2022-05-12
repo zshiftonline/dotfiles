@@ -4,7 +4,8 @@ echo "DEBUG: apt update start"
 	printf "Package Cache Updating.\t%s" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
-  done &
+    sleep 1
+  done;
     apt update &> /dev/null)"
 echo "DEBUG: apt update end"
 # install dependencies
@@ -12,7 +13,8 @@ echo "DEBUG: install deps start"
 	printf "Installing.\t%s" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
-  done &
+    sleep 1
+  done;
     apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null)"
 echo "DEBUG: install deps end"
 # system update
@@ -20,7 +22,8 @@ echo "DEBUG: apt full-upgrade start"
 	printf "Upgrading.\t%s" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
-	done &
+    sleep 1
+	done;
 	apt full-upgrade -y &> /dev/null)"
 echo "DEBUG: apt full-upgrade end"
 # clone config repo

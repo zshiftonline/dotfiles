@@ -4,6 +4,7 @@ echo "DEBUG: apt update start"
 	printf "Package Cache Updating.\t%s\n" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
+  done &
     apt update &> /dev/null)"
 echo "DEBUG: apt update end"
 # install dependencies
@@ -11,6 +12,7 @@ echo "DEBUG: install deps start"
 	printf "Installing.\t%s\n" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
+  done &
     apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null)"
 echo "DEBUG: install deps end"
 # system update

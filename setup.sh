@@ -2,26 +2,21 @@
 # update cache
 trap 'kill "$bgid"' EXIT
 echo "DEBUG: apt update start"
-  apt update &> /dev/null &
+  apt update &> /dev/null &; jobid=$!
+  printf "Package Cache Updating"
   jobid=$!; while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"
-	printf "%s" "Dependencies Installing.$(
-	for (( i=1; i<=8; i++ )); do
-		echo "."
-    sleep 0.5
-  done;
-    apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null)"
+  apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null &; jobid=$!
+  printf "Dependencies Installing"
+  while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
 echo "DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
-	printf "%s" "System Upgrading.$(
-	for (( i=1; i<=8; i++ )); do
-		echo "."
-    sleep 0.5
-	done;
-	apt full-upgrade -y &> /dev/null)"
+	apt full-upgrade -y &> /dev/null &; jobid=$!
+  printf "System Upgrading"
+  while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
 echo "DEBUG: apt full-upgrade end"
 # clone config repo
 echo "DEBUG: clone dotfiles repo start"

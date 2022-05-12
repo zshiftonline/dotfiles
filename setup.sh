@@ -1,12 +1,9 @@
 #!/bin/bash
 # update cache
+trap 'kill "$bgid"' EXIT
 echo "DEBUG: apt update start"
-	printf "%s" "Package Cache Updating.$(
-	for (( i=1; i<=8; i++ )); do
-		echo "."
-    sleep 0.5
-  done;
-    apt update &> /dev/null)"
+  apt update &> /dev/null &; jobid=$!;
+	while :; do printf "."; sleep 0.2; done &; bgid=$!; wait "$jobid";
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"

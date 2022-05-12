@@ -38,11 +38,13 @@ echo "DEBUG: stow configs end"
 echo "DEBUG: remove .zshrc.bck  & replace if exist start"
 	if [ ! -f $HOME/.zshrc.bck ]; then
 	    echo "DEBUG: .zshrc.bck doesnt exist"
-	    source $HOME/.zshrc
+      exec zsh
+      source $HOME/.zshrc
 	    source $HOME/.p10k.zsh
 	else
 	    echo "DEBUG: .zshrc.bck exists"
 	    mv $HOME/.zshrc.bck $HOME/.zshrc && echo "DEBUG: .zshrc replaced"
+      exec zsh
 	    source $HOME/.zshrc
 	    source $HOME/.p10k.zsh
 	fi

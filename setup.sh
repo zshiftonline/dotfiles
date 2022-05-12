@@ -1,7 +1,7 @@
 #!/bin/bash
 # update cache
 echo "DEBUG: apt update start"
-	printf "Package Cache Updating." "$(
+	printf "Package Cache Updating.\t%s" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
   done &
@@ -9,7 +9,7 @@ echo "DEBUG: apt update start"
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"
-	printf "Installing." "$(
+	printf "Installing.\t%s" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
   done &
@@ -17,7 +17,7 @@ echo "DEBUG: install deps start"
 echo "DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
-	printf "Upgrading." "$(
+	printf "Upgrading.\t%s" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
 	done &

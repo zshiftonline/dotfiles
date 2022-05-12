@@ -1,28 +1,28 @@
 #!/bin/bash
 # update cache
 echo "DEBUG: apt update start"
-	printf "Package Cache Updating.\t%s" "$(
+	printf "%s" "Package Cache Updating.$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
-    sleep 1
+    sleep 0.5
   done;
     apt update &> /dev/null)"
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"
-	printf "Installing.\t%s" "$(
+	printf "%s" "Dependencies Installing.$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
-    sleep 1
+    sleep 0.5
   done;
     apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null)"
 echo "DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
-	printf "Upgrading.\t%s" "$(
+	printf "%s" "System Upgrading.$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
-    sleep 1
+    sleep 0.5
 	done;
 	apt full-upgrade -y &> /dev/null)"
 echo "DEBUG: apt full-upgrade end"

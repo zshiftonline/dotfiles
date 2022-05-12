@@ -1,15 +1,21 @@
 #!/bin/bash
 # update cache
 echo "DEBUG: apt update start"
-	apt update &> /dev/null
+	printf "Package Cache Updating.\t%s\n" "$(
+	for (( i=1; i<=8; i++ )); do
+		echo "."
+    apt update &> /dev/null)"
 echo "DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"
-	apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null
+	printf "Installing.\t%s\n" "$(
+	for (( i=1; i<=8; i++ )); do
+		echo "."
+    apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null)"
 echo "DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
-	printf "Updating.\t%s\n" "$(
+	printf "Upgrading.\t%s\n" "$(
 	for (( i=1; i<=8; i++ )); do
 		echo "."
 	done &

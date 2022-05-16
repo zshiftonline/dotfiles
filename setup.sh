@@ -4,19 +4,19 @@ trap 'kill "$bgid"' EXIT
 echo "DEBUG: apt update start"
   apt update &> /dev/null
   jobid=$!; printf "Package Cache Updating"
-  while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
+  while :; do printf "."; sleep 0.2; done & && bgid=$!; wait "$jobid" && kill "$bgid"
 echo \n"DEBUG: apt update end"
 # install dependencies
 echo "DEBUG: install deps start"
-  apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null 
+	apt install -y zsh git stow curl wget htop neofetch neovim vim &> /dev/null 
   jobid=$!; printf "Dependencies Installing"
-  while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
+  while :; do printf "."; sleep 0.2; done & && bgid=$!; wait "$jobid" && kill "$bgid"
 echo \n"DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
 	apt full-upgrade -y &> /dev/null
   jobid=$!; printf "System Upgrading"
-  while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
+  while :; do printf "."; sleep 0.2; done & && bgid=$!; wait "$jobid" && kill "$bgid"
 echo \n"DEBUG: apt full-upgrade end"
 # clone config repo
 echo "DEBUG: clone dotfiles repo start"

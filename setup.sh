@@ -2,7 +2,7 @@
 # update cache
 trap 'kill "$bgid"' EXIT
 echo "DEBUG: apt update start"
-  apt update &> /dev/null & &> /dev/null
+  apt update &> /dev/null
   jobid=$!; printf "Package Cache Updating"
   while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
 echo \n"DEBUG: apt update end"
@@ -14,7 +14,7 @@ echo "DEBUG: install deps start"
 echo \n"DEBUG: install deps end"
 # system update
 echo "DEBUG: apt full-upgrade start"
-	apt full-upgrade -y &> /dev/null & &> /dev/null
+	apt full-upgrade -y &> /dev/null
   jobid=$!; printf "System Upgrading"
   while :; do printf "."; sleep 0.2; done & bgid=$!; wait "$jobid" && kill "$bgid"
 echo \n"DEBUG: apt full-upgrade end"

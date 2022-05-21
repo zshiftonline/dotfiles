@@ -10,3 +10,6 @@
 [submodule "ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k"]
 	path = ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "ohmyzsh/.config/ohmyzsh"]
+	path = ohmyzsh/.config/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh

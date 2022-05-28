@@ -104,9 +104,6 @@ alias pd='pushd'
 alias pp='popd'
 alias lnc='linode-cli'
 alias nls='ls --no-group --time-style=iso --color=always --group-directories-first -lA'
-<<<<<<< HEAD
-alias fierce='python3 /mnt/c/Users/zshif/fierce/fierce/fierce.py'
-=======
 alias gtac='git add .;git commit -m blah; git push'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -117,8 +114,3 @@ alias zeronet='zerotier-cli listnetworks'
 alias zeropeer='zerotier-cli listpeers'
 alias zerot='zerotier-cli info'
 alias zerpdump='zerotier-cli dump'
-<<<<<<< HEAD
-GITSTATUS_LOG_LEVEL=DEBUG
-=======
->>>>>>> 2f88876619ec64d957e5b4359d64aa6bf24606ea
->>>>>>> 002c15f3a43c289d103cbfa946e0a576b154af02

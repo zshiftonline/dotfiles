@@ -114,4 +114,7 @@ alias zeronet='zerotier-cli listnetworks'
 alias zeropeer='zerotier-cli listpeers'
 alias zerot='zerotier-cli info'
 alias zerpdump='zerotier-cli dump'
+<<<<<<< HEAD
 GITSTATUS_LOG_LEVEL=DEBUG
+=======
+>>>>>>> 2f88876619ec64d957e5b4359d64aa6bf24606ea

@@ -1,22 +1,15 @@
-<<<<<<< HEAD
-=======
-[submodule "ohmyzsh/.config/ohmyzsh"]
-	path = ohmyzsh/.config/ohmyzsh
-	url = https://github.com/ohmyzsh/ohmyzsh.git
->>>>>>> 2f88876619ec64d957e5b4359d64aa6bf24606ea
-[submodule "ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions"]
+[submodule "ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions"]
 	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule "ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting"]
+[submodule "ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting"]
 	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-<<<<<<< HEAD
-[submodule "ohmyzsh/.config/ohmyzsh/ohmyzsh/custom/plugins/zsh-completions"]
-=======
-[submodule "ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions"]
->>>>>>> 2f88876619ec64d957e5b4359d64aa6bf24606ea
+[submodule "ohmyzsh/.config/ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions"]
 	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k"]
 	path = ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "ohmyzsh/.config/ohmyzsh"]
+	path = ohmyzsh/.config/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh

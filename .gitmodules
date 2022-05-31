@@ -1,6 +1,7 @@
 [submodule "ohmyzsh/.config/ohmyzsh"]
 	path = ohmyzsh/.config/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+	ignore = dirty
 [submodule "ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions"]
 	path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git

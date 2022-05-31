@@ -1,0 +1,24 @@
+[submodule "nvim/.config/nvim/plugged/vim-easy-align"]
+path = nvim/.config/nvim/plugged/vim-easy-align
+url = https://github.com/junegunn/vim-easy-align.git
+[submodule "nvim/.config/nvim/plugged/vim-devicons"]
+path = nvim/.config/nvim/plugged/vim-devicons
+url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "nvim/.config/nvim/plugged/vim-nerdtree-syntax-highlight"]
+path = nvim/.config/nvim/plugged/vim-nerdtree-syntax-highlight
+url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule "nvim/.config/nvim/plugged/vim-snippets"]
+path = nvim/.config/nvim/plugged/vim-snippets
+url = https://github.com/honza/vim-snippets.git
+[submodule "nvim/.config/nvim/plugged/fzf.vim"]
+path = nvim/.config/nvim/plugged/fzf.vim
+url = https://github.com/junegunn/fzf.vim.git
+[submodule "nvim/.config/nvim/plugged/nerdtree"]
+path = nvim/.config/nvim/plugged/nerdtree
+url = https://github.com/preservim/nerdtree.git
+[submodule "nvim/.config/nvim/plugged/ultisnips"]
+path = nvim/.config/nvim/plugged/ultisnips
+url = https://github.com/SirVer/ultisnips.git
+[submodule "nvim/.config/nvim/plugged/vim-github-dashboard"]
+path = nvim/.config/nvim/plugged/vim-github-dashboard
+url = https://github.com/junegunn/vim-github-dashboard.git

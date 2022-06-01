@@ -47,19 +47,21 @@ set termguicolors
 
 " colorscheme gruvbox-material
 
+let plugin_dir = "$HOME/dotfiles/nvim/.config/nvim/plugged"
+
 call plug#begin('~/.config/nvim/plugged')
 "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 
-Plug 'junegunn/vim-easy-align'
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'junegunn/fzf'}
+Plug 'plugin_dir/vim-easy-align'
+Plug 'plugin_dir/vim-github-dashboard'
+Plug 'plugin_dir/ultisnips'
+Plug 'plugin_dir/vim-snippets'
+Plug 'plugin_dir/nerdtree'
+Plug 'plugin_dir/nerdtree-git-plugin'
+Plug 'plugin_dir/vim-devicons'
+Plug 'plugin_dir/vim-nerdtree-syntax-highlight'
+Plug 'plugin_dir/fzf.vim'
 
 call plug#end()
 

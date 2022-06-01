@@ -79,6 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
+export nvim_plugdir="$HOME/dotfiles/nvim/.config/nvim/plugged"
 
 # aliases
 alias rl='source ~/.zshrc'

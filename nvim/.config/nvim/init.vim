@@ -41,27 +41,25 @@ set mouse=a
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:indentLine_char = '⦙'
 
-" --- Colors
+"PlugUpdate --- Colors
 set background=dark
 set termguicolors
 
 " colorscheme gruvbox-material
 
-let plugin_dir = "$HOME/dotfiles/nvim/.config/nvim/plugged"
-
 call plug#begin('~/.config/nvim/plugged')
 "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 
-Plug 'plugin_dir/vim-easy-align'
-Plug 'plugin_dir/vim-github-dashboard'
-Plug 'plugin_dir/ultisnips'
-Plug 'plugin_dir/vim-snippets'
-Plug 'plugin_dir/nerdtree'
-Plug 'plugin_dir/nerdtree-git-plugin'
-Plug 'plugin_dir/vim-devicons'
-Plug 'plugin_dir/vim-nerdtree-syntax-highlight'
-Plug 'plugin_dir/fzf.vim'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/vim-easy-align'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/vim-github-dashboard'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/ultisnips'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/vim-snippets'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/nerdtree'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/nerdtree-git-plugin'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/vim-devicons'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/vim-nerdtree-syntax-highlight'
+Plug '~/dotfiles/nvim/.config/nvim/plugged/fzf.vim'
 
 call plug#end()
 

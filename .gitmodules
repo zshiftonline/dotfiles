@@ -41,3 +41,6 @@
 [submodule "vim-easy-align"]
 	path = vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "nvim/.config/nvim/plugged/nerdtree-git-plugin"]
+	path = nvim/.config/nvim/plugged/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git

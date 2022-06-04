@@ -1,0 +1,15 @@
+#/bin/bash
+
+for dir in */; do
+  cd $dir;
+  path="|$(git rev-parse --show-toplevel)|"
+  <F3>
+
+done
+
+
+
+
+
+
+# vi:syntax=sh:

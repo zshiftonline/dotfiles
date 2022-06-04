@@ -39,6 +39,8 @@ set noshowmode
 set updatetime=250
 set encoding=UTF-8
 set mouse=a
+set modeline
+set modelines=7
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:indentLine_char = '⦙'

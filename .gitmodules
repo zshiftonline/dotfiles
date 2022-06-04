@@ -9,4 +9,27 @@
 	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k"]
 	path = ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
+  url = https://github.com/romkatv/powerlevel10k.git
+
+[submodule "nvim/.config/nvim/plugged/gocode"]
+  path = nvim/.config/nvim/plugged/gocode
+  url = https://github.com/nsf/gocode.git
+[submodule "nvim/.config/nvim/plugged/nerdtree"]
+  path = nvim/.config/nvim/plugged/
+  url = https://github.com/nsf/gocode.git
+[submodule "nvim/.config/nvim/plugged/gocode"]
+  path = nvim/.config/nvim/plugged/gocode
+  url = https://github.com/nsf/gocode.git
+[submodule "nvim/.config/nvim/plugged/gocode"]
+  path = nvim/.config/nvim/plugged/gocode
+  url = https://github.com/nsf/gocode.git
+[submodule "nvim/.config/nvim/plugged/gocode"]
+  path = nvim/.config/nvim/plugged/gocode
+  url = https://github.com/nsf/gocode.git
+[submodule "nvim/.config/nvim/plugged/gocode"]
+  path = nvim/.config/nvim/plugged/gocode
+  url = https://github.com/nsf/gocode.git
+
+[submodule "nvim/.config/nvim/plugged/gocode"]
+  path = nvim/.config/nvim/plugged/gocode
+  url = https://github.com/nsf/gocode.git

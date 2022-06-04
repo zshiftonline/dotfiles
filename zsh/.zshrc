@@ -91,7 +91,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias blkid='sudo blkid'
-alias lsblk='lsblk -o name,size,mountpoint,type -e 7'
+alias lsblk='lsblk -o name,size,fstype,mountpoint,type -e 7'
 alias gits='git status'
 alias gita='git add'
 alias gitc='git clone'
@@ -109,3 +109,9 @@ alias gtac='git add .;git commit -m blah; git push'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias doc='doctl'
+. "/root/.acme.sh/acme.sh.env"
+alias zero='zerotier-cli'
+alias zeropeer='zerotier-cli listpeers'
+alias zeronet='zerotier-cli listnetworks'
+alias zeroinfo='zerotier-cli info'
+alias zerodump='zerotier-cli dump'

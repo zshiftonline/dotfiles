@@ -117,3 +117,4 @@ alias zeropeer='zerotier-cli listpeers'
 alias zerot='zerotier-cli info'
 alias zerpdump='zerotier-cli dump'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export ZT_ZSHIFT="52b337794f6417b2"

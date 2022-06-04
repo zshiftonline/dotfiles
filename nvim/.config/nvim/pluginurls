@@ -1,9 +1,40 @@
-https://github.com/nsf/gocode.git
-https://github.com/fatih/vim-go.git
-https://github.com/SirVer/ultisnips.git
-https://github.com/scrooloose/nerdtree.git
-https://github.com/honza/vim-snippets.git
-https://github.com/tpope/vim-fireplace.git
-https://github.com/junegunn/vim-github-dashboard.git
-https://github.com/rdnetto/YCM-Generator.git
-https://github.com/junegunn/vim-easy-align.git
+#/usr/bin/bash
+
+declare -A plugins="
+    ultisnips                         https://github.com/SirVer/ultisnips.git
+    nerdtree                          https://github.com/preservim/nerdtree.git
+    vim-devicons                      https://github.com/ryanoasis/vim-devicons.git
+    vim-nerdtree-syntax-highlight     https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+    vim-snippets                      https://github.com/honza/vim-snippets.git
+    vim-github-dashboard              https://github.com/junegunn/vim-github-dashboard.git
+    vim-easy-align                    https://github.com/junegunn/vim-easy-align.git
+    fzf.vim                           https://github.com/junegunn/fzf.vim.git"
+
+clone () {
+  for x in "${plugins[@]}"; do
+	  cd plugged && git clone $x && cd ..
+  done
+}
+
+gitmodules_init () {
+  if [ -f gitmodules ]
+  then
+	  rm gitmodules
+	  touch gitmodules
+  else
+	  touch gitmodules
+  fi
+
+  for url in "${!plugins[@]}"; do
+	  cd plugged/$url && var=$(realpath --relative-to=$HOME/dotfiles/ .) && cd ../..
+	  echo '[submodule "'$var'"]' 	>> gitmodules
+	  echo "path = $var"		>> gitmodules
+	  echo "url = ${plugins[$url]}"	>> gitmodules
+  done
+}
+
+case $1 in 
+  clone)      clone                               ;;
+  modules)    gitmodules_init                     ;;
+  *)          echo "Try clone or modules"         ;;
+esac

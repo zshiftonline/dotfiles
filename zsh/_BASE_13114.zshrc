@@ -79,7 +79,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
-export nvim_plugdir="$HOME/dotfiles/nvim/.config/nvim/plugged"
 
 # aliases
 alias rl='source ~/.zshrc'
@@ -92,7 +91,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias blkid='sudo blkid'
-alias lsblk='lsblk -o name,size,fstype,mountpoint,type -e 7'
+alias lsblk='lsblk -o name,size,mountpoint,type -e 7'
 alias gits='git status'
 alias gita='git add'
 alias gitc='git clone'
@@ -105,25 +104,8 @@ alias pd='pushd'
 alias pp='popd'
 alias lnc='linode-cli'
 alias nls='ls --no-group --time-style=iso --color=always --group-directories-first -lA'
-alias fierce='python3 /mnt/c/Users/zshif/fierce/fierce/fierce.py'
 alias gtac='git add .;git commit -m blah; git push'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias doc='doctl'
-<<<<<<< HEAD
-. "/root/.acme.sh/acme.sh.env"
-alias zero='zerotier-cli'
-alias zeropeer='zerotier-cli listpeers'
-alias zeronet='zerotier-cli listnetworks'
-alias zeroinfo='zerotier-cli info'
-alias zerodump='zerotier-cli dump'
-=======
-alias zero='zerotier-cli'
-alias zeronet='zerotier-cli listnetworks'
-alias zeropeer='zerotier-cli listpeers'
-alias zerot='zerotier-cli info'
-alias zerpdump='zerotier-cli dump'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export ZT_ZSHIFT="52b337794f6417b2"
->>>>>>> f60fc0bfb3185ab5c0b195fcb06c07cb8356d0cf

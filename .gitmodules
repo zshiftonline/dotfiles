@@ -48,4 +48,3 @@
 [submodule "nvim/.config/nvim/plugged/nerdtree-git-plugin"]
 	path = nvim/.config/nvim/plugged/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
->>>>>>> f60fc0bfb3185ab5c0b195fcb06c07cb8356d0cf

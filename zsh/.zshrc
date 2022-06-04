@@ -70,6 +70,7 @@ plugins=(
             colored-man-pages
             debian
             systemd
+            themes
         )
 
     fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"

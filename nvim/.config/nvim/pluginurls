@@ -1,24 +1,22 @@
-#/bin/bash
+#/usr/bin/bash
 
-declare -A plugins=(
-	["ultisnips"]="https://github.com/SirVer/ultisnips.git"
-	["nerdtree"]="https://github.com/preservim/nerdtree.git"
-	["vim-devicons"]="https://github.com/ryanoasis/vim-devicons.git"
-	["vim-nerdtree-syntax-highlight"]="https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git"
-	["vim-snippets"]="https://github.com/honza/vim-snippets.git"
-	["vim-github-dashboard"]="https://github.com/junegunn/vim-github-dashboard.git"
-	["vim-easy-align"]="https://github.com/junegunn/vim-easy-align.git"
-	["fzf.vim"]="https://github.com/junegunn/fzf.vim.git"
-)
+declare -A plugins="
+    ultisnips                         https://github.com/SirVer/ultisnips.git
+    nerdtree                          https://github.com/preservim/nerdtree.git
+    vim-devicons                      https://github.com/ryanoasis/vim-devicons.git
+    vim-nerdtree-syntax-highlight     https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+    vim-snippets                      https://github.com/honza/vim-snippets.git
+    vim-github-dashboard              https://github.com/junegunn/vim-github-dashboard.git
+    vim-easy-align                    https://github.com/junegunn/vim-easy-align.git
+    fzf.vim                           https://github.com/junegunn/fzf.vim.git"
 
-
-clone() {
+clone () {
   for x in "${plugins[@]}"; do
 	  cd plugged && git clone $x && cd ..
   done
 }
 
-gitmodules_init() {
+gitmodules_init () {
   if [ -f gitmodules ]
   then
 	  rm gitmodules

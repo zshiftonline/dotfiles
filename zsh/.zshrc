@@ -7,6 +7,9 @@ fi
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/snap/bin:/home/dusty47z/.local/usr/local/bin:$PATH
 export ZSH="$HOME/.config/ohmyzsh"
+export ZSH_CUSTOM="$HOME/dotfiles/ohmyzsh/.config/custom"
+export MANPATH="/usr/local/man:$MANPATH"
+export LANG=en_US.UTF-8
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -78,10 +81,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export MANPATH="/usr/local/man:$MANPATH"
-export LANG=en_US.UTF-8
 export nvim_plugdir="$HOME/dotfiles/nvim/.config/nvim/plugged"
-export ZSH_CUSTOM="$HOME/dotfiles/ohmyzsh/.config/custom"
 
 # aliases
 alias rl='source ~/.zshrc'

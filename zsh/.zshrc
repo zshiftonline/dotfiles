@@ -112,14 +112,11 @@ alias gtac='git add .;git commit -m blah; git push'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias doc='doctl'
-<<<<<<< HEAD
-. "/root/.acme.sh/acme.sh.env"
 alias zero='zerotier-cli'
 alias zeropeer='zerotier-cli listpeers'
 alias zeronet='zerotier-cli listnetworks'
 alias zeroinfo='zerotier-cli info'
 alias zerodump='zerotier-cli dump'
-=======
 alias zero='zerotier-cli'
 alias zeronet='zerotier-cli listnetworks'
 alias zeropeer='zerotier-cli listpeers'
@@ -127,4 +124,3 @@ alias zerot='zerotier-cli info'
 alias zerpdump='zerotier-cli dump'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export ZT_ZSHIFT="52b337794f6417b2"
->>>>>>> f60fc0bfb3185ab5c0b195fcb06c07cb8356d0cf

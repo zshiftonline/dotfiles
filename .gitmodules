@@ -13,10 +13,6 @@
 [submodule "ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k"]
 	path = ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k
   url = https://github.com/romkatv/powerlevel10k.git
-[submodule "nvim/.config/nvim/plugged/nerdtree"]
-  path = nvim/.config/nvim/plugged/
-  url = https://github.com/nsf/gocode.git
-	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "nvim/.config/nvim/plugged/vim-easy-align"]
 	path = nvim/.config/nvim/plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git

@@ -42,10 +42,22 @@ set modelines=7
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:indentLine_char = '⦙'
+let g:html_indent_style1 = 'inc'
+let g:htl_css_templatesi
+let g:htl_all_templates
 
 "PlugUpdate --- Colors
 set background=dark
 set termguicolors
+
+let g:closetag_filetypes = 'html,xhtml,phtml,javascript,typescript'
+let g:closetag_regions = {
+      \ 'typescript.tsx': 'jsxRegion,tsxRegion,litHtmlRegion',
+      \ 'javascript.jsx': 'jsxRegion,litHtmlRegion',
+      \ 'javacsript':     'litHtmlRegion',
+      \ 'typescript':     'litHtmlRegion',
+      \ }
+
 
 " colorscheme gruvbox-material
 
@@ -62,6 +74,10 @@ Plug '~/dotfiles/nvim/.config/nvim/plugged/nerdtree-git-plugin'
 Plug '~/dotfiles/nvim/.config/nvim/plugged/vim-devicons'
 Plug '~/dotfiles/nvim/.config/nvim/plugged/vim-nerdtree-syntax-highlight'
 Plug '~/dotfiles/nvim/.config/nvim/plugged/fzf.vim'
+
+Plug 'jonsmithers/vim-html-template-literals'
+Plug 'pangloss/vim-javascript'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
 

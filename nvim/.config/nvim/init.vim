@@ -43,8 +43,6 @@ set modelines=7
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:indentLine_char = '⦙'
 let g:html_indent_style1 = 'inc'
-let g:htl_css_templatesi
-let g:htl_all_templates
 
 "PlugUpdate --- Colors
 set background=dark
@@ -57,6 +55,13 @@ let g:closetag_regions = {
       \ 'javacsript':     'litHtmlRegion',
       \ 'typescript':     'litHtmlRegion',
       \ }
+
+augroup skeletons
+  au!
+  autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
+augroup END
+
+
 
 
 " colorscheme gruvbox-material

@@ -43,4 +43,7 @@
 	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "nvim/.config/nvim/plugged/nerdtree-git-plugin"]
 	path = nvim/.config/nvim/plugged/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+  url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "nvim/.config/nvim/plugged/vim-closetag"]
+  path = nvim/.config/nvim/plugged/vim-closetag 
+  url = https://github.com/alvan/vim-closetag.git

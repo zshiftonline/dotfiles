@@ -38,8 +38,8 @@
 [submodule "nvim/.config/nvim/plugged/vim-github-dashboard"]
 	path = nvim/.config/nvim/plugged/vim-github-dashboard
 	url = https://github.com/junegunn/vim-github-dashboard.git
-[submodule "vim-easy-align"]
-	path = vim-easy-align
+[submodule "nvim/.config/nvim/plugged/vim-easy-align"]
+	path = nvim/.config/nvim/plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "nvim/.config/nvim/plugged/nerdtree-git-plugin"]
 	path = nvim/.config/nvim/plugged/nerdtree-git-plugin

@@ -47,3 +47,6 @@
 [submodule "nvim/.config/nvim/plugged/vim-closetag"]
   path = nvim/.config/nvim/plugged/vim-closetag 
   url = https://github.com/alvan/vim-closetag.git
+[submodule "nvim/.config/nvim/plugged/vim-html-template-literals"]
+  path = nvim/.config/nvim/plugged/vim-html-template-literals
+  url = https://github.com/jonsmithers/vim-html-template-literals.git

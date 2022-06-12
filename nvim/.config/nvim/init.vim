@@ -9,7 +9,8 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" source ~/.vimrc
+source ~/.vimrc
+
 syntax on
 set tabstop=2
 set softtabstop=2

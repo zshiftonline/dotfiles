@@ -86,7 +86,7 @@ export nvim_plugdir="$HOME/dotfiles/nvim/.config/nvim/plugged"
 # aliases
 alias rl='source ~/.zshrc'
 alias ll='ls -phlAt --color=auto --group-directories-first'
-alias ls='ls -XpA --group-directories-first --color=auto'
+alias ls='ls -cpA --group-directories-first --color=auto'
 alias vim='nvim'
 alias cat='batcat'
 alias c='clear'

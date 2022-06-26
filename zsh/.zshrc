@@ -5,12 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/snap/bin:/home/dusty47z/.local/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/snap/bin:/home/dusty47z/.local/usr/local/bin:/usr/sbin:$PATH
 export ZSH="$HOME/.config/ohmyzsh"
-export ZSH_CUSTOM="$HOME/dotfiles/ohmyzsh/.config/custom"
-export MANPATH="/usr/local/man:$MANPATH"
-export LANG=en_US.UTF-8
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 bindkey "^[[H"  beginning-of-line
@@ -27,21 +24,41 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
 
-# Do menu-driven completion.
-zstyle ':completion:*' menu select
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Color completion for some things.
-# http://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/dusty47z/Programs/googlecli/google-cloud-sdk/path.zsh.inc' ]; then . '/home/dusty47z/Programs/googlecli/google-cloud-sdk/path.zsh.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/dusty47z/Programs/googlecli/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/dusty47z/Programs/googlecli/google-cloud-sdk/completion.zsh.inc'; fi
+alias router='ssh 10.98.1.1 -i /home/dusty47z/.ssh/id_local'
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _oldlist _expand _complete _ignored _match _approximate
+zstyle ':completion:*' completions 1
+zstyle ':completion:*' glob 1
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-
-# formatting and messages
-# http://www.masterzen.fr/2009/04/19/in-love-with-zsh-part-one/
-zstyle ':completion:*' verbose yes
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' '' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+m:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' max-errors 2
+zstyle ':completion:*' menu select=1
+zstyle ':completion:*' original true
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle ':completion:*' substitute 1
+zstyle ':completion:*' use-compctl true
+zstyle ':completion:*' verbose true
 zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
 zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle :compinstall filename '/home/dusty47z/.zshrc'
 zstyle ':completion:*' group-name ''
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -69,11 +86,15 @@ plugins=(
             alias-finder
             zsh-syntax-highlighting
             git
+            git-auto-fetch
+            gitfast
+            github
+            gitignore
+            git-prompt
             sudo
             colored-man-pages
             debian
             systemd
-            themes
         )
 
     fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
@@ -81,12 +102,14 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export MANPATH="/usr/local/man:$MANPATH"
+export LANG=en_US.UTF-8
 export nvim_plugdir="$HOME/dotfiles/nvim/.config/nvim/plugged"
 
 # aliases
 alias rl='source ~/.zshrc'
 alias ll='ls -phlAt --color=auto --group-directories-first'
-alias ls='ls -cpA --group-directories-first --color=auto'
+alias ls='ls -XpA --group-directories-first --color=auto'
 alias vim='nvim'
 alias cat='batcat'
 alias c='clear'
@@ -94,12 +117,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias blkid='sudo blkid'
-alias lsblk='lsblk -o name,size,fstype,mountpoint,type -e 7'
+alias lsblk='lsblk -o name,size,mountpoint,type -e 7'
 alias gits='git status'
 alias gita='git add'
 alias gitc='git clone'
 alias gitp='git push -u origin main'
-alias update='sudo apt update && sudo apt upgrade'
 alias sc='apt search --names-only'
 alias ac='sudo apt install'
 alias inf='apt info'
@@ -109,19 +131,9 @@ alias lnc='linode-cli'
 alias nls='ls --no-group --time-style=iso --color=always --group-directories-first -lA'
 alias fierce='python3 /mnt/c/Users/zshif/fierce/fierce/fierce.py'
 alias gtac='git add .;git commit -m blah; git push'
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias doc='doctl'
-alias zero='zerotier-cli'
-alias zeropeer='zerotier-cli listpeers'
-alias zeronet='zerotier-cli listnetworks'
-alias zeroinfo='zerotier-cli info'
-alias zerodump='zerotier-cli dump'
 alias zero='zerotier-cli'
 alias zeronet='zerotier-cli listnetworks'
 alias zeropeer='zerotier-cli listpeers'
 alias zerot='zerotier-cli info'
 alias zerpdump='zerotier-cli dump'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export ZT_ZSHIFT="52b337794f6417b2"

@@ -246,7 +246,7 @@ assign [class="Rocket.Chat"]    $ws1
 
 # CENTER MONITOR WORKSPACE PROGRAMS
 assign [class="Chromium"]	            $ws2
-assign [class="vivaldi-snapshot"]       $ws2
+assign [class="Vivaldi-snapshot"]     $ws2
 
 assign [class="vlc"]		            $ws6
 

@@ -1,7 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = dustin boyden
+	email = zshiftonline@gmail.com
 [init]
 	defaultBranch = main
-[user]
-	email = zshiftonline@gmail.com
-	name = zshiftonline
+[pull]
+	rebase = false
 [credential]
-	helper = cache
+	helper = store

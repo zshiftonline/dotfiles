@@ -7,6 +7,7 @@ fi
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/snap/bin:/home/dusty47z/.local/usr/local/bin:/usr/sbin:$PATH
 export ZSH="$HOME/.config/ohmyzsh"
+export ZSH_CUSTOM="$HOME/.config/custom"
 ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -97,7 +98,7 @@ plugins=(
             systemd
         )
 
-    fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
+    fpath+="${ZSH_CUSTOM:-"$HOME/.config/custom"}/plugins/zsh-completions/src"
 
 source $ZSH/oh-my-zsh.sh
 

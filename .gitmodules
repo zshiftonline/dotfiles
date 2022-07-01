@@ -1,23 +1,20 @@
 
 [submodule "ohmyzsh/.config/custom/plugins/zsh-autosuggestions"]
-  path = ohmyzsh/.config/custom/plugins/zsh-autosuggestions
-  url = https://github.com/zsh-users/zsh-autosuggestions.git
+	path = ohmyzsh/.config/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "ohmyzsh/.config/custom/plugins/zsh-syntax-highlighting"]
-  path = ohmyzsh/.config/custom/plugins/zsh-syntax-highlighting
-  url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+	path = ohmyzsh/.config/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "ohmyzsh/.config/custom/plugins/zsh-completions"]
-  path = ohmyzsh/.config/custom/plugins/zsh-completions
-  url = https://github.com/zsh-users/zsh-completions.git
+	path = ohmyzsh/.config/custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "ohmyzsh/.config/custom/themes/powerlevel10k"]
-  path = ohmyzsh/.config/custom/themes/powerlevel10k
-  url = https://github.com/romkatv/powerlevel10k.git
+	path = ohmyzsh/.config/custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "ohmyzsh/.config/ohmyzsh"]
   path = ohmyzsh/.config/ohmyzsh
   url = https://github.com/ohmyzsh/ohmyzsh.git
   ignore = dirty
-[submodule "nvim/.config/nvim/plugged/vim-easy-align"]
-	path = nvim/.config/nvim/plugged/vim-easy-align
-	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "nvim/.config/nvim/plugged/vim-devicons"]
 	path = nvim/.config/nvim/plugged/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
@@ -39,9 +36,6 @@
 [submodule "nvim/.config/nvim/plugged/vim-github-dashboard"]
 	path = nvim/.config/nvim/plugged/vim-github-dashboard
 	url = https://github.com/junegunn/vim-github-dashboard.git
-[submodule "nvim/.config/nvim/plugged/vim-easy-align"]
-	path = nvim/.config/nvim/plugged/vim-easy-align
-	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "nvim/.config/nvim/plugged/nerdtree-git-plugin"]
 	path = nvim/.config/nvim/plugged/nerdtree-git-plugin
   url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
@@ -51,3 +45,6 @@
 [submodule "nvim/.config/nvim/plugged/vim-html-template-literals"]
   path = nvim/.config/nvim/plugged/vim-html-template-literals
   url = https://github.com/jonsmithers/vim-html-template-literals.git
+[submodule "nvim/.config/nvim/plugged/vim-javascript"]
+	path = nvim/.config/nvim/plugged/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git

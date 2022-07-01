@@ -49,5 +49,5 @@
 	path = nvim/.config/nvim/plugged/vim-javascript
   url = https://github.com/pangloss/vim-javascript.git
 [submodule "nvim/.config/nvim/plugged/vim-easy-align"]
-  path = nvim/.config/nvim/plugged/vim-easy-align
-  url = https://github.com/junegunn/vim-easy-align
+	path = nvim/.config/nvim/plugged/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align

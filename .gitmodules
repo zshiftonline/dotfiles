@@ -2,17 +2,17 @@
   path = ohmyzsh/.config/ohmyzsh
   url = https://github.com/ohmyzsh/ohmyzsh.git
   ignore = dirty
-[submodule "ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions"]
-  path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-autosuggestions
+[submodule "ohmyzsh/.config/custom/plugins/zsh-autosuggestions"]
+  path = ohmyzsh/.config/custom/plugins/zsh-autosuggestions
   url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule "ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting"]
-  path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-syntax-highlighting
+[submodule "ohmyzsh/.config/custom/plugins/zsh-syntax-highlighting"]
+  path = ohmyzsh/.config/custom/plugins/zsh-syntax-highlighting
   url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions"]
-  path = ohmyzsh/.config/ohmyzsh/custom/plugins/zsh-completions
+[submodule "ohmyzsh/.config/custom/plugins/zsh-completions"]
+  path = ohmyzsh/.config/custom/plugins/zsh-completions
   url = https://github.com/zsh-users/zsh-completions.git
-[submodule "ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k"]
-  path = ohmyzsh/.config/ohmyzsh/custom/themes/powerlevel10k
+[submodule "ohmyzsh/.config/custom/themes/powerlevel10k"]
+  path = ohmyzsh/.config/custom/themes/powerlevel10k
   url = https://github.com/romkatv/powerlevel10k.git
 [submodule "nvim/.config/nvim/plugged/vim-easy-align"]
 	path = nvim/.config/nvim/plugged/vim-easy-align

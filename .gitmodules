@@ -47,4 +47,7 @@
   url = https://github.com/jonsmithers/vim-html-template-literals.git
 [submodule "nvim/.config/nvim/plugged/vim-javascript"]
 	path = nvim/.config/nvim/plugged/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
+  url = https://github.com/pangloss/vim-javascript.git
+[submodule "nvim/.config/nvim/plugged/vim-easy-align"]
+  path = nvim/.config/nvim/plugged/vim-easy-align
+  url = https://github.com/junegunn/vim-easy-align

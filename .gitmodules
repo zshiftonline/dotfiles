@@ -1,7 +1,4 @@
-[submodule "ohmyzsh/.config/ohmyzsh"]
-  path = ohmyzsh/.config/ohmyzsh
-  url = https://github.com/ohmyzsh/ohmyzsh.git
-  ignore = dirty
+
 [submodule "ohmyzsh/.config/custom/plugins/zsh-autosuggestions"]
   path = ohmyzsh/.config/custom/plugins/zsh-autosuggestions
   url = https://github.com/zsh-users/zsh-autosuggestions.git
@@ -14,6 +11,10 @@
 [submodule "ohmyzsh/.config/custom/themes/powerlevel10k"]
   path = ohmyzsh/.config/custom/themes/powerlevel10k
   url = https://github.com/romkatv/powerlevel10k.git
+[submodule "ohmyzsh/.config/ohmyzsh"]
+  path = ohmyzsh/.config/ohmyzsh
+  url = https://github.com/ohmyzsh/ohmyzsh.git
+  ignore = dirty
 [submodule "nvim/.config/nvim/plugged/vim-easy-align"]
 	path = nvim/.config/nvim/plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git

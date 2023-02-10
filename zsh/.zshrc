@@ -10,6 +10,7 @@ export ZSH="$HOME/.config/ohmyzsh"
 export ZSH_CUSTOM="$HOME/.config/custom"
 ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+export TERM=xterm-256color
 
 bindkey "^[[H"  beginning-of-line
 bindkey "^[[F"  end-of-line
@@ -57,9 +58,12 @@ zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle :compinstall filename '/home/dusty47z/.zshrc'
 zstyle ':completion:*' group-name ''
 
-autoload -Uz compinit
+autoload -Uz +X compinit
 compinit
 # End of lines added by compinstall
+# load and init bash completion backwards compatibility library
+autoload -U +X bashcompinit
+bashcompinit
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -101,6 +105,7 @@ plugins=(
     fpath+="${ZSH_CUSTOM:-"$HOME/.config/custom"}/plugins/zsh-completions/src"
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.config/custom/completions/linode.sh
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
@@ -138,3 +143,6 @@ alias zeronet='zerotier-cli listnetworks'
 alias zeropeer='zerotier-cli listpeers'
 alias zerot='zerotier-cli info'
 alias zerpdump='zerotier-cli dump'
+alias linodevpn='ssh -t erocktion@lish-atlanta.linode.com ubuntu-vpn'
+alias lish='ssh erocktion@lish-atlanta.linode.com'
+alias nala='sudo nala'

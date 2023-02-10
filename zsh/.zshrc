@@ -1,3 +1,4 @@
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -36,29 +37,36 @@ alias router='ssh 10.98.1.1 -i /home/dusty47z/.ssh/id_local'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _oldlist _expand _complete _ignored _match _approximate
 zstyle ':completion:*' completions 1
-zstyle ':completion:*' glob 1
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' '' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+m:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}'
-zstyle ':completion:*' max-errors 2
-zstyle ':completion:*' menu select=1
-zstyle ':completion:*' original true
-zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-zstyle ':completion:*' substitute 1
-zstyle ':completion:*' use-compctl true
-zstyle ':completion:*' verbose true
+zstyle ':completion:*' expand suffix
+zstyle ':completion:*' file-sort links
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
 zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
-zstyle :compinstall filename '/home/dusty47z/.zshrc'
+zstyle ':completion:*' glob 1
 zstyle ':completion:*' group-name ''
+zstyle ':completion:*' ignore-parents parent pwd ..
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]} r:|[.,_-]=** r:|=**' '' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+m:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' max-errors 5
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' original true
+zstyle ':completion:*' preserve-prefix '//[^/]##/'
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle ':completion:*' squeeze-slashes true
+zstyle ':completion:*' substitute 1
+zstyle ':completion:*' use-compctl true
+zstyle ':completion:*' verbose true
+zstyle :compinstall filename '/home/dusty47z/.zshrc'
 
-autoload -Uz +X compinit
+autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 # load and init bash completion backwards compatibility library
@@ -111,6 +119,8 @@ source $HOME/.config/custom/completions/linode.sh
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 export nvim_plugdir="$HOME/dotfiles/nvim/.config/nvim/plugged"
+export QT_QPA_PLATFORMTHEME=gtk2
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # aliases
 alias rl='source ~/.zshrc'

@@ -29,7 +29,7 @@ set incsearch
 set nohlsearch
 set ignorecase
 set smartcase
-set nowrap
+" set nowrap
 set splitbelow
 set splitright
 set hidden

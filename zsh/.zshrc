@@ -136,4 +136,7 @@ alias zero='zerotier-cli'
 alias zeronet='zerotier-cli listnetworks'
 alias zeropeer='zerotier-cli listpeers'
 alias zerot='zerotier-cli info'
-alias zerpdump='zerotier-cli dump'
+alias zerodump='zerotier-cli dump'
+
+fpath+=~/.zfunc
+

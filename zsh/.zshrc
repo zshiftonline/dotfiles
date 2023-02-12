@@ -108,7 +108,7 @@ plugins=(
             colored-man-pages
             debian
             systemd
-        )
+         command-not-found common-aliases copybuffer copyfile)
 
     fpath+="${ZSH_CUSTOM:-"$HOME/.config/custom"}/plugins/zsh-completions/src"
 
@@ -152,14 +152,8 @@ alias zero='zerotier-cli'
 alias zeronet='zerotier-cli listnetworks'
 alias zeropeer='zerotier-cli listpeers'
 alias zerot='zerotier-cli info'
-<<<<<<< HEAD
 alias zerpdump='zerotier-cli dump'
 alias linodevpn='ssh -t erocktion@lish-atlanta.linode.com ubuntu-vpn'
 alias lish='ssh erocktion@lish-atlanta.linode.com'
 alias nala='sudo nala'
-=======
-alias zerodump='zerotier-cli dump'
-
-fpath+=~/.zfunc
-
->>>>>>> 89094c4a8c66eb5486d58ecb6b5268f6fe456256
+alias listcmds='(alias | cut -f1 -d= ; hash -f; hash -v | cut -f 1 -d= ; typeset +f) | sort'

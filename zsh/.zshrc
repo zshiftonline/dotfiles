@@ -108,7 +108,11 @@ plugins=(
             colored-man-pages
             debian
             systemd
-         command-not-found common-aliases copybuffer copyfile)
+            command-not-found
+            common-aliases
+            copybuffer
+            copyfile
+            zsh-bash-completions-fallback)
 
     fpath+="${ZSH_CUSTOM:-"$HOME/.config/custom"}/plugins/zsh-completions/src"
 

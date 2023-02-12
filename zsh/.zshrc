@@ -12,6 +12,7 @@ export ZSH_CUSTOM="$HOME/.config/custom"
 ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 export TERM=xterm-256color
+export ZSH_BASH_COMPLETIONS_FALLBACK_PRELOAD_ALL=1
 
 bindkey "^[[H"  beginning-of-line
 bindkey "^[[F"  end-of-line

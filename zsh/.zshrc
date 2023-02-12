@@ -1,4 +1,5 @@
 
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -12,7 +13,6 @@ export ZSH_CUSTOM="$HOME/.config/custom"
 ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 export TERM=xterm-256color
-export ZSH_BASH_COMPLETIONS_FALLBACK_PRELOAD_ALL=1
 
 bindkey "^[[H"  beginning-of-line
 bindkey "^[[F"  end-of-line
@@ -39,32 +39,24 @@ alias router='ssh 10.98.1.1 -i /home/dusty47z/.ssh/id_local'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+
 # The following lines were added by compinstall
 
-zstyle ':completion:*' completer _oldlist _expand _complete _ignored _match _approximate
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
 zstyle ':completion:*' completions 1
-zstyle ':completion:*' expand suffix
-zstyle ':completion:*' file-sort links
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
-zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
-zstyle ':completion:*:messages' format '%d'
-zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
 zstyle ':completion:*' glob 1
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' ignore-parents parent pwd ..
+zstyle ':completion:*' insert-unambiguous false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' list-suffixes true
-zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]} r:|[.,_-]=** r:|=**' '' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+m:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}'
-zstyle ':completion:*' max-errors 5
+zstyle ':completion:*' matcher-list '+' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' max-errors 2
 zstyle ':completion:*' menu select=long
-zstyle ':completion:*' original true
+zstyle ':completion:*' original false
 zstyle ':completion:*' preserve-prefix '//[^/]##/'
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-zstyle ':completion:*' squeeze-slashes true
 zstyle ':completion:*' substitute 1
-zstyle ':completion:*' use-compctl true
 zstyle ':completion:*' verbose true
+zstyle ':completion:*' use-compctl false
 zstyle :compinstall filename '/home/dusty47z/.zshrc'
 
 autoload -Uz compinit
@@ -162,3 +154,10 @@ alias linodevpn='ssh -t erocktion@lish-atlanta.linode.com ubuntu-vpn'
 alias lish='ssh erocktion@lish-atlanta.linode.com'
 alias nala='sudo nala'
 alias listcmds='(alias | cut -f1 -d= ; hash -f; hash -v | cut -f 1 -d= ; typeset +f) | sort'
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=5000
+SAVEHIST=50000
+setopt autocd extendedglob notify
+bindkey -e
+# End of lines configured by zsh-newuser-install

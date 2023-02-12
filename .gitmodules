@@ -51,3 +51,6 @@
 [submodule "nvim/.config/nvim/plugged/vim-easy-align"]
 	path = nvim/.config/nvim/plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
+[submodule "ohmyzsh/.config/custom/plugins/ohmyzsh/.config/custom/plugins/zsh-bash-completions-fallback"]
+	path = ohmyzsh/.config/custom/plugins/ohmyzsh/.config/custom/plugins/zsh-bash-completions-fallback
+	url = https://github.com/3v1n0/zsh-bash-completions-fallback

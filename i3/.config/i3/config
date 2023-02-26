@@ -229,13 +229,13 @@ workspace_auto_back_and_forth   yes
 # HIDE BORDERS
 hide_edge_borders both
 
-# WORKSPACE SPECIFIC MONITORS
-workspace $ws1 output $left-monitor
+# MONITOR SPECIFIC WORKSPACES - 2 Monitors
+workspace $ws1 output $center-monitor $left-monitor
 workspace $ws2 output $center-monitor
 workspace $ws3 output $right-monitor
-workspace $ws4 output $left-monitor
+workspace $ws4 output $center-monitor $left-monitor
 workspace $ws5 output $right-monitor
-workspace $ws6 output $center-monitor
+workspace $ws6 output $center-monitor 
 workspace $ws7 output $center-monitor
 
 # LEFT MONITOR WORKSPACE PROGRAMS
@@ -260,16 +260,16 @@ assign [class="Pulseeffects"]	$ws5
 assign [class="kitty"]		    $ws3
 
 # STARTUP PROGRAMS
-exec discord-canary
+# exec discord-canary
 exec vivaldi-snapshot
 exec kitty
-exec pcmanfm
+# exec pcmanfm
 exec rocket.chat
 
 # STARTUP ACTIONS
 exec ~/.config/i3/scripts/bluetooth.sh
 
 # DISPLAY WALLPAPER
-exec_always feh --bg-fill ~/pictures/debian.jpg
+exec_always feh --bg-fill ~/Pictures/debian2.png
 exec_always picom
 exec_always --no-startup-id ~/.config/polybar/launch.sh

@@ -107,8 +107,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "social"
-set $ws2 "www"
+set $ws1 "www"
+set $ws2 "social"
 set $ws3 "terminal"
 set $ws4 "misc"
 set $ws5 "equalizer"
@@ -157,22 +157,22 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 2 px or 2 ppt
+        bindsym k resize grow height 2 px or 2 ppt
+        bindsym l resize shrink height 2 px or 2 ppt
+        bindsym semicolon resize grow width 2 px or 2 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 2 px or 2 ppt
-        bindsym Down resize grow height 2 px or 2 ppt
-        bindsym Up resize shrink height 2 px or 2 ppt
-        bindsym Right resize grow width 2 px or 2 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
-}
+        }
 
 bindsym $mod+r mode "resize"
 
@@ -239,14 +239,14 @@ workspace $ws6 output $center-monitor
 workspace $ws7 output $center-monitor
 
 # LEFT MONITOR WORKSPACE PROGRAMS
-assign [class="discord"]	    $ws1
-assign [class="Thunar"]		    $ws1
-assign [class="Pcmanfm"]        $ws1
-assign [class="Rocket.Chat"]    $ws1
+assign [class="discord"]	    $ws2
+assign [class="Thunar"]		    $ws2
+assign [class="Pcmanfm"]        $ws2
+assign [class="Rocket.Chat"]    $ws2
 
 # CENTER MONITOR WORKSPACE PROGRAMS
-assign [class="Chromium"]	            $ws2
-assign [class="Vivaldi-snapshot"]     $ws2
+assign [class="Chromium"]	            $ws1
+assign [class="Vivaldi-snapshot"]     $ws1
 
 assign [class="vlc"]		            $ws6
 
@@ -264,12 +264,12 @@ assign [class="kitty"]		    $ws3
 exec vivaldi-snapshot
 exec kitty
 # exec pcmanfm
-exec rocket.chat
+# exec rocket.chat
 
 # STARTUP ACTIONS
 exec ~/.config/i3/scripts/bluetooth.sh
 
 # DISPLAY WALLPAPER
-exec_always feh --bg-fill ~/Pictures/debian2.png
+exec_always feh --bg-fill ~/Pictures/debian.jpg
 exec_always picom
 exec_always --no-startup-id ~/.config/polybar/launch.sh

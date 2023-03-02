@@ -270,6 +270,6 @@ exec kitty
 exec ~/.config/i3/scripts/bluetooth.sh
 
 # DISPLAY WALLPAPER
-exec_always feh --bg-fill ~/Pictures/debian.jpg
+exec_always feh --bg-fill ~/Pictures/debian2.png
 exec_always picom
 exec_always --no-startup-id ~/.config/polybar/launch.sh

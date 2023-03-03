@@ -178,6 +178,10 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+shift+x exec i3lock --color=000000
 
+# CUSTOM MONITOR BRIGHTNESS SHORTCUTS
+bindsym $mod+Prior exec br set up 10
+bindsym $mod+Next exec br set down 10
+
 # CUSTOM PROGRAM SHORTCUTS
 bindsym Print           exec flameshot gui
 bindsym $mod+b          exec vivaldi-snapshot

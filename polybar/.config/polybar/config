@@ -17,7 +17,8 @@ alert = #bd2c40
 [fonts]
 main = Ubuntu:pixelsize=14;2
 second = Noto Mono:fontformat=truetype:size=16:antialias=false;0
-emoji = Noto Color Emoji:pixelsize=14;2
+emoji = Noto Sans Symbols:pixelsize=17;2
+emoji2 = FontAwesome:pixelsize=16;2
 
 [settings]
 

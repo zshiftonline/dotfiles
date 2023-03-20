@@ -1,11 +1,20 @@
 #!/usr/bin/env bash
 
-deps=( git zsh stow htop neovim vim bat )
-echo ${deps[@]}
+server=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan net-tools ranger )
+workstation=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools )
+
+
+
+if [ $choice = "1" ]; then
+  type="${server[@]}"
+else
+  type="${workstation[@]}"
+fi
+
 aptinstall() {
   echo -en "\n Sudo password required for $USER \n"
   read -s -p " Pass: " auth
-  echo $auth | sudo -S su -c "apt-get update && apt-get upgrade -y && apt-get install -y ${deps[@]}"
+  echo $auth | sudo -S su -c "apt-get update && apt-get upgrade -y && apt-get install -y $type"
 }
 
 gitclone() {
@@ -18,7 +27,7 @@ gitclone() {
 }
 
 stowconfig() {
-  stow zsh ohmyzsh nvim vim htop neofetch powerlevel10k
+  stow 
 }
 
 checkconfig() {

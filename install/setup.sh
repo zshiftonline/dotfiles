@@ -1,27 +1,40 @@
 #!/usr/bin/env bash
 
-server=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan net-tools ranger )
+num() { ansi --green-intense --bold  $1  ;}
+tit() { ansi --cyan-intense  --bold  $1  ;}
+tex() { ansi --yellow        --bold  $1  ;}
+des() { ansi --white-intense         $1  ;}
+err() { ansi --red-intense   --bold  $1  ;}
+
+
+server=( git zsh stow htop neovim vim bat mlocate arp-scan net-tools ranger )
 workstation=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools )
-
-input() {
-  dialog \
-    --backtitle "Select which set of Packages" \
-    --menu "Please select" \
-    10 40 3 \
-    1 "" \
-    2 "Second option"
-
-  if [ $choice = "1" ]; then
-    type="${server[@]}"
-  else
-    type="${workstation[@]}"
-  fi
-}
 
 aptinstall() {
   echo -en "\n Sudo password required for $USER \n"
   read -s -p " Pass: " auth
-  echo $auth | sudo -S su -c "apt-get update && apt-get upgrade -y && apt-get install -y $type"
+  echo $auth | sudo -S su -c "apt-get -q update && apt-get -q upgrade -y && apt-get -q install -y $1"
+}
+
+input() {
+workstation="git zsh stow htop neovim vim bat mlocate curl wget arp-scan net-tools ranger"
+server="git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools"
+
+echo -ne "
+  $(tit "Select Which Set of Packages You Want to Install")\n
+    $(num "1")) $(num "Workstation")
+        $(des "${workstation[@]}")\n
+    $(num "2")) $(num "Server")
+        $(des "${server[@]}")\n
+    $(num "0")) $(num "Exit")\n\n"
+  read -n 1 -p "    $(num "Choose an option: ")" choice
+
+  case $choice in
+      1)  aptinstall ${workstation[@]} ;;
+      2)  aptinstall ${server[@]}      ;;
+  0)  exit 0 ;;
+  *)  echo -e "\n\n      $(err "Invalid Option.")\n"; exit 0;
+  esac
 }
 
 gitclone() {
@@ -51,7 +64,7 @@ checkconfig() {
 }
 
 
-aptinstall && gitclone && stowconfig && checkconfig && printf "\n Configuration Complete! \n"
+input && aptinstall && gitclone && stowconfig && checkconfig && printf "\n Configuration Complete! \n"
 
 
 

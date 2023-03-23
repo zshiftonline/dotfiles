@@ -28,7 +28,13 @@ exec --no-startup-id nm-applet
 
 # autostart items
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no-startup-id ~/.config/i3/startup.sh
+exec_always picom -b 
+exec_always feh --bg-fill ~/Pictures/debian2.png
+exec pulseeffects
+exec vivaldi-snapshot
+exec kitty
+exec discord-canary
+exec ~/.config/i3/scripts/bluetooth.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

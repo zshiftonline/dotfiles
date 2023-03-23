@@ -3,13 +3,20 @@
 server=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan net-tools ranger )
 workstation=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools )
 
+input() {
+  dialog \
+    --backtitle "Select which set of Packages" \
+    --menu "Please select" \
+    10 40 3 \
+    1 "" \
+    2 "Second option"
 
-
-if [ $choice = "1" ]; then
-  type="${server[@]}"
-else
-  type="${workstation[@]}"
-fi
+  if [ $choice = "1" ]; then
+    type="${server[@]}"
+  else
+    type="${workstation[@]}"
+  fi
+}
 
 aptinstall() {
   echo -en "\n Sudo password required for $USER \n"

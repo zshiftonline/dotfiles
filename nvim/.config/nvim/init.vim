@@ -41,7 +41,11 @@ set mouse=a
 set modeline
 set modelines=7
 
+" associating filetypes
+autocmd BufNewFile,BufRead *.ejs set syntax=javascript
+
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 let g:indentLine_char = '⦙'
 let g:html_indent_style1 = 'inc'
 

@@ -20,6 +20,11 @@ input() {
 workstation="git zsh stow htop neovim vim bat mlocate curl wget arp-scan net-tools ranger"
 server="git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools"
 
+whiptail --checklist \
+  "Please pick one" 10 60 5 \
+  one one off two two off \
+  three three off four four off five five off
+
 echo -ne "
   $(tit "Select Which Set of Packages You Want to Install")\n
     $(num "1")) $(num "Workstation")

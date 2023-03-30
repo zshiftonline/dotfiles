@@ -155,6 +155,8 @@ alias linodevpn='ssh -t erocktion@lish-atlanta.linode.com ubuntu-vpn'
 alias lish='ssh erocktion@lish-atlanta.linode.com'
 alias nala='sudo nala'
 alias listcmds='(alias | cut -f1 -d= ; hash -f; hash -v | cut -f 1 -d= ; typeset +f) | sort'
+alias vimssh='sudo vim /etc/ssh/ssh_config'
+alias vimsshd='sudo vim /etc/ssh/sshd_config'
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=5000

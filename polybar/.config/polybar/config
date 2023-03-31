@@ -17,9 +17,11 @@ alert = #bd2c40
 [fonts]
 main = Ubuntu:pixelsize=14;2
 second = Noto Mono:fontformat=truetype:size=16:antialias=false;0
+third = Hack:style=Regular
+fourth = DejaVu Sans:style=Book
+fifth = DejaVu Sans Mono:style=Book
 emoji = Noto Sans Symbols:pixelsize=17;2
 emoji2 = Font Awesome 6 Free,Font Awesome 6 Free Solid:style=Solid:pixelsize=16;2
 
 [settings]
-
 ; vim:ft=dosini

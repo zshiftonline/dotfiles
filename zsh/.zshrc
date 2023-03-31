@@ -157,6 +157,8 @@ alias nala='sudo nala'
 alias listcmds='(alias | cut -f1 -d= ; hash -f; hash -v | cut -f 1 -d= ; typeset +f) | sort'
 alias vimssh='sudo vim /etc/ssh/ssh_config'
 alias vimsshd='sudo vim /etc/ssh/sshd_config'
+alias vimzsh='vim ~/.zshrc'
+alias stl='sudo system systemctl'
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=5000

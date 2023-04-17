@@ -1,0 +1,52 @@
+#compdef arp-scan
+
+_arp_scan() {
+  local line state
+
+  _arguments -C         \
+      "1: :->cmds"      \
+      "*::arg:->args"
+
+  case "$state" in
+    cmds)
+      _values "arp-scan" \
+              "help[Display this help message and exits.]" \
+              "version[Display programs version and exits.]"
+      ;;
+    args)
+      case $line[1] in
+        -h|--help|help)
+            _arp_scan_help
+            ;;
+        -v|--version|version)
+            _arp_scan_version
+            ;;
+      esac
+      ;;
+  esac
+}
+
+_arp_scan_help() {
+  _describe "arp-scan help"
+}
+
+_arp_scan_version() {
+  _describe "arp-scan version"
+}
+
+_arp_scan
+
+
+
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "$ZSH_CACHE_DIR"
+
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:*:-command-:*:*' group-order commands builtins functions alias
+
+zstyle ':completion:*:complete:arp-scan:*:interfaces' menu-complete
+
+zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
+zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
+zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
+zstyle ':completion:*:warnings' format ' %B%F{red}%K{darkgreen}-- no matches found --%k%f%b'

@@ -1,5 +1,4 @@
 
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -11,13 +10,20 @@ export LESS="--mouse --wheel-lines=2 -RiXj5"
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/snap/bin:/home/dusty47z/.local/usr/local/bin:/usr/sbin:$PATH
 export ZSH="$HOME/.config/ohmyzsh"
 export ZSH_CUSTOM="$HOME/.config/custom"
-ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
+export ZSH_COMPLETION="${ZSH_CUSTOM}/completions"
+export ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 export TERM=xterm-256color
 
 bindkey "^[[H"  beginning-of-line
 bindkey "^[[F"  end-of-line
+bindkey "^[[5~" beginning-of-buffer-or-history
+bindkey "^[[6~" end-of-buffer-or-history
 bindkey "^[[3~" delete-char
+
+setopt MENU_COMPLETE
+setopt AUTO_LIST
+setopt COMPLETE_IN_WORD
 
 # CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
@@ -41,24 +47,39 @@ alias router='ssh 10.98.1.1 -i /home/dusty47z/.ssh/id_local'
 
 
 
+
+
+
 # The following lines were added by compinstall
 
-zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle ':completion:*' auto-description 'specify: %d'
+# zstyle ':completion:*' completer _oldlist _expand _complete _ignored _match _approximate
+zstyle ':completion:*' completer _extensions _complete _approximate
 zstyle ':completion:*' completions 1
+zstyle ':completion:*' complete-options true
+zstyle ':completion:*' file-sort name
 zstyle ':completion:*' glob 1
+zstyle ':completion:*' group-name ''
 zstyle ':completion:*' insert-unambiguous false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' matcher-list '+' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB to scroll. Matches: %l%s'
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]} r:|[._-]=* r:|=*' '+r:|[._-]=* r:|=*'
+zstyle ':completion:*' match-original both
 zstyle ':completion:*' max-errors 2
-zstyle ':completion:*' menu select=long
-zstyle ':completion:*' original false
+zstyle ':completion:*' menu select=1
+zstyle ':completion:*' old-list always
+zstyle ':completion:*' old-menu false
+zstyle ':completion:*' original true
 zstyle ':completion:*' preserve-prefix '//[^/]##/'
-zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p. Matches: %l%s'
 zstyle ':completion:*' substitute 1
-zstyle ':completion:*' verbose true
 zstyle ':completion:*' use-compctl false
-zstyle :compinstall filename '/home/dusty47z/.zshrc'
+zstyle ':completion:*' verbose true
+zstyle ':completion:*' word true
+zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
+# zstyle ':completion:*:(scp|rsync):*' tag-order ' hosts:-ipaddr:ip\ address hosts:-host:host files'
+# zstyle ':completion:*:(ssh|scp|rsync):*:hosts-host' ignored-patterns '*(.|:)*' loopback ip6-loopback localhost ip6-localhost broadcasthost
+# zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<->.<->.<->|(|::)([[:xdigit:].]##:(#c,2))##(|%*))' '127.0.0.<->' '255.255.255.255' '::1' 'fe80::*'style :compinstall filename '/home/dusty47z/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -111,7 +132,8 @@ plugins=(
     fpath+="${ZSH_CUSTOM:-"$HOME/.config/custom"}/plugins/zsh-completions/src"
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.config/custom/completions/linode.sh
+source $ZSH_COMPLETION/linode.sh
+source $ZSH_COMPLETION/arp-scan.zsh
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
@@ -130,7 +152,6 @@ alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias blkid='sudo blkid'
 alias lsblk='lsblk -o name,size,mountpoint,type -e 7'
 alias gits='git status'
 alias gita='git add'
@@ -153,7 +174,6 @@ alias zerot='zerotier-cli info'
 alias zerpdump='zerotier-cli dump'
 alias linodevpn='ssh -t erocktion@lish-atlanta.linode.com ubuntu-vpn'
 alias lish='ssh erocktion@lish-atlanta.linode.com'
-alias nala='sudo nala'
 alias listcmds='(alias | cut -f1 -d= ; hash -f; hash -v | cut -f 1 -d= ; typeset +f) | sort'
 alias vimssh='sudo vim /etc/ssh/ssh_config'
 alias vimsshd='sudo vim /etc/ssh/sshd_config'
@@ -165,7 +185,12 @@ alias stlt='sudo systemctl status'
 alias stle='sudo systemctl enable'
 alias stld='sudo systemctl disable'
 alias stlrl='sudo systemctl daemon-reload'
-# Lines configured by zsh-newuser-install
+alias nala='sudo nala'
+alias htop='sudo htop'
+alias blkid='sudo blkid'
+alias xev='$HOME/scripts/xev.sh'
+#alias arp-scan='sudo arp-scan'
+# Lines configured by zsh-newuser-install^[[5~
 HISTFILE=~/.histfile
 HISTSIZE=5000
 SAVEHIST=50000

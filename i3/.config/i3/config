@@ -114,8 +114,8 @@ set $ws4 "misc"
 set $ws5 "equalizer"
 set $ws6 "video"
 set $ws7 "game"
-set $ws8 "8"
-set $ws9 "9"
+set $ws8 "code"
+set $ws9 "term"
 set $ws10 "10"
 
 # switch to workspace

@@ -158,7 +158,13 @@ alias listcmds='(alias | cut -f1 -d= ; hash -f; hash -v | cut -f 1 -d= ; typeset
 alias vimssh='sudo vim /etc/ssh/ssh_config'
 alias vimsshd='sudo vim /etc/ssh/sshd_config'
 alias vimzsh='vim ~/.zshrc'
-alias stl='sudo system systemctl'
+alias stls='sudo systemctl start'
+alias stlp='sudo systemctl stop'
+alias stlr='sudo systemctl restart'
+alias stlt='sudo systemctl status'
+alias stle='sudo systemctl enable'
+alias stld='sudo systemctl disable'
+alias stlrl='sudo systemctl daemon-reload'
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=5000

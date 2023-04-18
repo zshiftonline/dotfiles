@@ -1,0 +1,19 @@
+#compdef _local_arp local-arp
+
+local -a ifaces=( $(ip addr list | awk -F': ' '/^[0-9]/ {print $2}') )
+
+_arguments "*:network interface:( ${ifaces[2,-1]} )"
+
+#_arp_local() {
+#  local -a commands
+#  commands=(
+#      'lan:wired network device'
+#      'wifi:wireless network device'
+#  )
+#
+#  if (( CURRENT == 2 )); then
+#    _describe -t commands 'commands' commands
+#  fi
+#
+#  return 0
+#}

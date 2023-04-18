@@ -1,0 +1,13 @@
+#compdef ipadd
+
+# The line above declares this function as providing completions to 
+# `ipadd`. In addition, it's important that the file name starts with 
+# an `_`, otherwise `compinit` won't autoload it.
+
+local output=$(networksetup -listallnetworkservices)
+
+# Split the output on newlines.
+local -a services=( ${(f)output} )
+
+# Offer the second to the last line as completions.
+_arguments "*:network service:( ${services[2,-1]} )"

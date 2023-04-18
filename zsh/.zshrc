@@ -50,7 +50,7 @@ source $ZSH_COMPLETION/
 
 # The following lines were added by compinstall
 
-zstyle ':completion:*' auto-description 'specify: %d'
+# zstyle ':completion:*' auto-description 'specify: %d'
 # zstyle ':completion:*' completer _oldlist _expand _complete _ignored _match _approximate
 zstyle ':completion:*' completer _extensions _complete _approximate
 zstyle ':completion:*' completions 1
@@ -187,7 +187,6 @@ alias htop='sudo htop'
 alias blkid='sudo blkid'
 alias xev='$HOME/scripts/xev.sh'
 alias arp-scan='sudo arp-scan'
-# alias arp-local='sudo -u dusty47z -i "$HOME/scripts/arp-local.sh"'
 # Lines configured by zsh-newuser-install^[[5~
 HISTFILE=~/.histfile
 HISTSIZE=5000

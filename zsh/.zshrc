@@ -45,9 +45,7 @@ alias router='ssh 10.98.1.1 -i /home/dusty47z/.ssh/id_local'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-
-
+source $ZSH_COMPLETION/
 
 
 # The following lines were added by compinstall
@@ -130,10 +128,9 @@ plugins=(
             zsh-bash-completions-fallback colorize)
 
     fpath+="${ZSH_CUSTOM:-"$HOME/.config/custom"}/plugins/zsh-completions/src"
+    fpath+="${ZSH_COMPLETION}"
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH_COMPLETION/linode.sh
-source $ZSH_COMPLETION/arp-scan.zsh
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"

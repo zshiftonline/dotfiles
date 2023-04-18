@@ -1,0 +1,17 @@
+#compdef _arp_local arp-local
+
+_arp_local() {
+  local -a commands
+  commands=(
+      'lan:wired network device'
+      'wifi:wireless network device'
+  )
+
+  if (( CURRENT == 2 )); then
+    _describe -t commands 'commands' commands
+  fi
+
+  return 0
+}
+
+_arp_local

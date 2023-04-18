@@ -1,4 +1,4 @@
-#compdef _local_arp local-arp
+#compdef _arplocal arplocal
 
 local -a ifaces=( $(ip addr list | awk -F': ' '/^[0-9]/ {print $2}') )
 

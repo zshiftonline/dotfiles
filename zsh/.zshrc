@@ -79,6 +79,9 @@ zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f
 # zstyle ':completion:*:(ssh|scp|rsync):*:hosts-host' ignored-patterns '*(.|:)*' loopback ip6-loopback localhost ip6-localhost broadcasthost
 # zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<->.<->.<->|(|::)([[:xdigit:].]##:(#c,2))##(|%*))' '127.0.0.<->' '255.255.255.255' '::1' 'fe80::*'style :compinstall filename '/home/dusty47z/.zshrc'
 
+zstyle ':completion:*:*:arplocal:*:descriptions' format '%B%F{yellow}%d%f%b'
+zstyle ':completion:*:*:arplocal:argument-rest:*' format '%F{blue}%d%f'
+
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -187,6 +190,7 @@ alias htop='sudo htop'
 alias blkid='sudo blkid'
 alias xev='$HOME/scripts/xev.sh'
 alias arp-scan='sudo arp-scan'
+alias systemctl='sudo systemctl'
 # Lines configured by zsh-newuser-install^[[5~
 HISTFILE=~/.histfile
 HISTSIZE=5000
@@ -194,3 +198,5 @@ SAVEHIST=50000
 setopt autocd extendedglob notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
+
+. "/home/dusty47z/.acme.sh/acme.sh.env"

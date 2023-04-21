@@ -7,10 +7,12 @@
 # invoke global X session script
 . /etc/X11/Xsession &
 
-xset +fp /home/dusty47z/.local/share/fonts
-xset fp rehash
-xset dpms 2700 2700 2700
-xset s 2700
+# xset +fp /home/dusty47z/.local/share/fonts
+# xset fp rehash
+xset dpms 600 1800 3600
+xset s 600
+xset -b
+setxkbmap -option terminate:ctrl_alt_bksp
 
 ## vscode auth fix ##
 # see https://unix.stackexchange.com/a/295652/332452
@@ -29,4 +31,7 @@ eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 ## end vscode auth fix ##
 
-exec dbus-launch i3 > ~/.i3.log 2>&1
+cp ~/.i3log/.i3.log ~/.i3log/.i3.log.last
+echo "Launching i3 at $(date)" >> ~/.i3log/.i3.log
+
+exec dbus-launch i3 -V >> ~/.i3log/.i3.log 2>&1

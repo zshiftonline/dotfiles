@@ -9,10 +9,11 @@
 
 # xset +fp /home/dusty47z/.local/share/fonts
 # xset fp rehash
-xset dpms 600 1800 3600
-xset s 600
+xset dpms 1800 4800 4800
+xset s 1800
 xset -b
 setxkbmap -option terminate:ctrl_alt_bksp
+numlockx &
 
 ## vscode auth fix ##
 # see https://unix.stackexchange.com/a/295652/332452

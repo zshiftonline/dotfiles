@@ -191,6 +191,7 @@ alias blkid='sudo blkid'
 alias xev='$HOME/scripts/xev.sh'
 alias arp-scan='sudo arp-scan'
 alias systemctl='sudo systemctl'
+alias webupdate='ssh webserver 'bash -s' < $HOME/scripts/gitpull.sh'
 # Lines configured by zsh-newuser-install^[[5~
 HISTFILE=~/.histfile
 HISTSIZE=5000

@@ -7,8 +7,11 @@ des() { ansi --white-intense         $1  ;}
 err() { ansi --red-intense   --bold  $1  ;}
 
 
-server=( git zsh stow htop neovim vim bat mlocate arp-scan net-tools ranger )
-workstation=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools )
+server=( git zsh stow htop neovim vim bat mlocate arp-scan net-tools ranger tree )
+workstation=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools tree )
+
+stow_server=( git zsh htop nvim vim ranger ohmyzsh powerlevel10k )
+stow_workstation=( git zsh htop nvim vim kitty ranger xinit dunst pcmanfm rofi picom polybar powerlevel10k ohmyzsh dialog i3 flameshot )
 
 aptinstall() {
   echo -en "\n Sudo password required for $USER \n"
@@ -52,7 +55,11 @@ gitclone() {
 }
 
 stowconfig() {
-  stow 
+  case $choice in
+      1)  stow ${stow_workstation[@]} ;;
+      2)  stow ${stow_server[@]}      ;;
+  *)  echo -e "\n\n      $(err "Invalid Option.")\n"; exit 0;
+  esac
 }
 
 checkconfig() {

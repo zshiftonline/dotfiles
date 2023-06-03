@@ -10,13 +10,14 @@ err() { ansi --red-intense   --bold  $1  ;}
 server=( git zsh stow htop neovim vim bat mlocate arp-scan net-tools ranger tree )
 workstation=( git zsh stow htop neovim vim bat mlocate curl wget arp-scan kitty ranger xinit dunst net-tools tree )
 
-stow_server=( git zsh htop nvim vim ranger ohmyzsh powerlevel10k )
-stow_workstation=( git zsh htop nvim vim kitty ranger xinit dunst pcmanfm rofi picom polybar powerlevel10k ohmyzsh dialog i3 flameshot )
+stow_server=( git zsh nvim vim ranger ohmyzsh powerlevel10k )
+stow_workstation=( git zsh nvim vim kitty ranger xinit dunst pcmanfm rofi picom polybar powerlevel10k ohmyzsh dialog i3 flameshot )
 
 aptinstall() {
-  echo -en "\n Sudo password required for $USER \n"
-  read -s -p " Pass: " auth
-  echo $auth | sudo -S su -c "apt-get -q update && apt-get -q upgrade -y && apt-get -q install -y $1"
+ # echo -en "\n Sudo password required for $USER \n"
+ # read -s -p " Pass: " auth
+ # echo $auth | sudo -S su -c "
+ apt-get -q update && apt-get -q upgrade -y && apt-get -q install -y "$@"
 }
 
 input() {
